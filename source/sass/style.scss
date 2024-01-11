@@ -2,3 +2,20 @@
 // ---------------------------------
 
 @import "vendor/normalize";
+// Swiper 8.4.7
+// @import "vendor/swiper";
+
+// Global
+// ---------------------------------
+
+@import "global/fonts";
+@import "global/container";
+@import "variables";
+@import "mixins";
+@import "global/reboot";
+@import "global/utils";
+
+// Blocks
+// ---------------------------------
+
+@import "blocks/main-header";

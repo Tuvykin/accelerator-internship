@@ -10,16 +10,38 @@
 </head>
 
 <body>
-  <div data-test="slider">slider</div>
-  <div data-test="about">about</div>
-  <div data-test="programs">programs</div>
-  <div data-test="grant">grant</div>
-  <div data-test="news">news</div>
-  <div data-test="FAQ">FAQ</div>
-  <div data-test="reviews">reviews</div>
-  <div data-test="contacts">contacts</div>
-  <div data-test="form">form</div>
-  <div data-test="footer">footer</div>
+  <div class="wrapper">
+    <header class="main-header" data-test="slider">
+      <div class="main-header__container container">
+        <nav class="navigation">
+          <a class="navigation__logo" href="#" aria-current="page">
+            <svg width="30" height="30">
+              <use xlink:href="img/sprite.svg#icon-logo"></use>
+            </svg>
+          </a>
+          <button class="navigation__button">
+            <span class="navigation__button-description">меню</span>
+            <div class="navigation__button-wrapper">
+              <svg width="20" height="20">
+                <use xlink:href="img/sprite.svg#icon-menu"></use>
+              </svg>
+            </div>
+          </button>
+        </nav>
+        <section class="hero"></section>
+      </div>
+    </header>
+    <div data-test="about">about</div>
+    <div data-test="programs">programs</div>
+    <div data-test="grant">grant</div>
+    <div data-test="news">news</div>
+    <div data-test="FAQ">FAQ</div>
+    <div data-test="reviews">reviews</div>
+    <div data-test="contacts">contacts</div>
+    <div data-test="form">form</div>
+    <div data-test="footer">footer</div>
+  </div>
+
   <script type="module" src="js/main.js"></script>
 </body>
 

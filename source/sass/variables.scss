@@ -1,0 +1,27 @@
+// Colors
+// ---------------------------------
+
+$color-base:                        #484848;
+
+// Default
+
+$color-default-black:               #000000;
+$color-default-white:               #ffffff;
+$color-transparent:                 rgba(255, 255, 255, 0);
+
+// Project palette
+// для нейминга цветов используем https://www.htmlcsscolor.com/hex/334482
+
+// Typography
+// ---------------------------------
+
+// переменная используемая в html для подключения скейлинга
+$fz-default:                        16px;
+
+$ff-placeholder:                    "Manrope", "Arial", sans-serif;
+
+// Viewports
+// ---------------------------------
+
+$vp-768:                            768px;
+$vp-1440:                           1440px;
