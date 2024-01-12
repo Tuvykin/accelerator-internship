@@ -7,6 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Internship programs</title>
   <link rel="stylesheet" href="sass/style.scss">
+  <!-- Шрифты -->
+  <link rel="preload" href="fonts/ManropeLight.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ManropeMedium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ManropeRegular.woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body>
@@ -15,31 +19,52 @@
       <div class="main-header__container container">
         <nav class="navigation">
           <a class="navigation__logo" href="#" aria-current="page">
-            <svg width="30" height="30">
-              <use xlink:href="img/sprite.svg#icon-logo"></use>
-            </svg>
+            <img src="img/icon/icon-logo.svg" alt="Логотип" width="30" height="30">
           </a>
-          <button class="navigation__button">
+          <button class="navigation__button button">
             <span class="navigation__button-description">меню</span>
             <div class="navigation__button-wrapper">
               <svg width="20" height="20">
-                <use xlink:href="img/sprite.svg#icon-menu"></use>
+                <use xlink:href="__spritemap#sprite-icon-menu"></use>
               </svg>
             </div>
           </button>
         </nav>
-        <section class="hero"></section>
+        <section class="hero">
+          <div class="hero__swiper swiper"></div>
+          <ul class="hero__list">
+            <li class="hero__item">
+              <div class="hero__wrapper-image">
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="img/picture/hero-mobile.webp 1x, img/picture/hero-mobile2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1439px)"
+                    srcset="img/picture/hero-tablet.webp 1x, img/picture/hero-tablet2x.webp 2x">
+                  <source type="image/webp" srcset="img/picture/hero.webp 1x, img/picture/hero2x.webp 2x">
+                  <source media="(max-width: 767px)"
+                    srcset="img/picture/hero-mobile.jpg 1x, img/picture/hero-mobile2x.jpg 2x" width="362" height="568">
+                  <source media="(max-width: 1439px)"
+                    srcset="img/picture/hero-tablet.jpg 1x, img/picture/hero-tablet2x.jpg 2x" width="768" height="1024">
+                  <img src="img/picture/hero.jpg" srcset="img/picture/hero2x.jpg 2x" loading="lazy" alt="" width="1440"
+                    height="800">
+                </picture>
+              </div>
+            </li>
+          </ul>
+        </section>
       </div>
     </header>
-    <div data-test="about">about</div>
-    <div data-test="programs">programs</div>
-    <div data-test="grant">grant</div>
-    <div data-test="news">news</div>
-    <div data-test="FAQ">FAQ</div>
-    <div data-test="reviews">reviews</div>
-    <div data-test="contacts">contacts</div>
-    <div data-test="form">form</div>
-    <div data-test="footer">footer</div>
+    <!-- <main>
+      <div data-test="about">about</div>
+      <div data-test="programs">programs</div>
+      <div data-test="grant">grant</div>
+      <div data-test="news">news</div>
+      <div data-test="FAQ">FAQ</div>
+      <div data-test="reviews">reviews</div>
+      <div data-test="contacts">contacts</div>
+      <div data-test="form">form</div>
+    </main>
+    <footer data-test="footer">footer</footer> -->
   </div>
 
   <script type="module" src="js/main.js"></script>

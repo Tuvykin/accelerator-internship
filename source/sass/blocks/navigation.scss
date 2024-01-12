@@ -1,0 +1,48 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 1240px;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.navigation__logo {
+  display: block;
+  width: 52px;
+  height: 52px;
+  padding: 10px;
+  background-color: $color-default-white;
+  border-radius: 30px;
+}
+
+.navigation__button {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 3px;
+  padding-left: 19px;
+  border-radius: 30px;
+  border: 1px solid #316DC2;
+  background-color: $color-default-white;
+}
+
+.navigation__button-description {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: 0.28px;
+  text-transform: uppercase;
+  color: #316DC2;
+}
+
+.navigation__button-wrapper {
+  width: 46px;
+  height: 46px;
+  border-radius: 44px;
+  background-color: #316DC2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
