@@ -31,26 +31,50 @@
           </button>
         </nav>
         <section class="hero">
-          <div class="hero__swiper swiper"></div>
-          <ul class="hero__list">
-            <li class="hero__item">
-              <div class="hero__wrapper-image">
-                <picture>
-                  <source type="image/webp" media="(max-width: 767px)"
-                    srcset="img/picture/hero-mobile.webp 1x, img/picture/hero-mobile2x.webp 2x">
-                  <source type="image/webp" media="(max-width: 1439px)"
-                    srcset="img/picture/hero-tablet.webp 1x, img/picture/hero-tablet2x.webp 2x">
-                  <source type="image/webp" srcset="img/picture/hero.webp 1x, img/picture/hero2x.webp 2x">
-                  <source media="(max-width: 767px)"
-                    srcset="img/picture/hero-mobile.jpg 1x, img/picture/hero-mobile2x.jpg 2x" width="362" height="568">
-                  <source media="(max-width: 1439px)"
-                    srcset="img/picture/hero-tablet.jpg 1x, img/picture/hero-tablet2x.jpg 2x" width="768" height="1024">
-                  <img src="img/picture/hero.jpg" srcset="img/picture/hero2x.jpg 2x" loading="lazy" alt="" width="1440"
-                    height="800">
-                </picture>
-              </div>
-            </li>
-          </ul>
+          <div class="hero__swiper swiper" data-hero-swiper>
+            <ul class="hero__list swiper-wrapper">
+              <li class="hero__item swiper-slide">
+                <div class="hero__wrapper-image">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/picture/hero/hero-girl-mobile.webp 1x, img/picture/hero/hero-girl-mobile2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1439px)"
+                      srcset="img/picture/hero/hero-girl-tablet.webp 1x, img/picture/hero/hero-girl-tablet2x.webp 2x">
+                    <source type="image/webp"
+                      srcset="img/picture/hero/hero-girl.webp 1x, img/picture/hero/hero-girl2x.webp 2x">
+                    <source media="(max-width: 767px)"
+                      srcset="img/picture/hero/hero-girl-mobile.jpg 1x, img/picture/hero/hero-girl-mobile2x.jpg 2x"
+                      width="362" height="568">
+                    <source media="(max-width: 1439px)"
+                      srcset="img/picture/hero/hero-girl-tablet.jpg 1x, img/picture/hero/hero-girl-tablet2x.jpg 2x"
+                      width="768" height="1024">
+                    <img src="img/picture/hero/hero-girl.jpg" srcset="img/picture/hero/hero-girl2x.jpg 2x"
+                      loading="lazy" alt="" width="1440" height="800">
+                  </picture>
+                </div>
+              </li>
+              <li class="hero__item swiper-slide">
+                <div class="hero__wrapper-image">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/picture/hero/hero-family-mobile.webp 1x, img/picture/hero/hero-family-mobile2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1439px)"
+                      srcset="img/picture/hero/hero-family-tablet.webp 1x, img/picture/hero/hero-family-tablet2x.webp 2x">
+                    <source type="image/webp"
+                      srcset="img/picture/hero/hero-family.webp 1x, img/picture/hero/hero-family2x.webp 2x">
+                    <source media="(max-width: 767px)"
+                      srcset="img/picture/hero/hero-family-mobile.jpg 1x, img/picture/hero/hero-family-mobile2x.jpg 2x"
+                      width="362" height="568">
+                    <source media="(max-width: 1439px)"
+                      srcset="img/picture/hero/hero-family-tablet.jpg 1x, img/picture/hero/hero-family-tablet2x.jpg 2x"
+                      width="768" height="1024">
+                    <img src="img/picture/hero/hero-family.jpg" srcset="img/picture/hero/hero-family2x.jpg 2x"
+                      loading="lazy" alt="" width="1440" height="800">
+                  </picture>
+                </div>
+              </li>
+            </ul>
+          </div>
         </section>
       </div>
     </header>
