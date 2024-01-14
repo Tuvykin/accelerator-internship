@@ -21,9 +21,9 @@
           <a class="navigation__logo" href="#" aria-current="page">
             <img src="img/icon/icon-logo.svg" alt="Логотип" width="30" height="30">
           </a>
-          <button class="navigation__button button">
-            <span class="navigation__button-description">меню</span>
-            <div class="navigation__button-wrapper">
+          <button class="navigation__button button button__design">
+            <span class="navigation__button-description button__description">меню</span>
+            <div class="navigation__button-wrapper button__wrapper">
               <svg width="20" height="20">
                 <use xlink:href="__spritemap#sprite-icon-menu"></use>
               </svg>
@@ -31,49 +31,97 @@
           </button>
         </nav>
         <section class="hero">
-          <div class="hero__swiper swiper" data-hero-swiper>
-            <ul class="hero__list swiper-wrapper">
-              <li class="hero__item swiper-slide">
-                <div class="hero__wrapper-image">
-                  <picture>
-                    <source type="image/webp" media="(max-width: 767px)"
-                      srcset="img/picture/hero/hero-girl-mobile.webp 1x, img/picture/hero/hero-girl-mobile2x.webp 2x">
-                    <source type="image/webp" media="(max-width: 1439px)"
-                      srcset="img/picture/hero/hero-girl-tablet.webp 1x, img/picture/hero/hero-girl-tablet2x.webp 2x">
-                    <source type="image/webp"
-                      srcset="img/picture/hero/hero-girl.webp 1x, img/picture/hero/hero-girl2x.webp 2x">
-                    <source media="(max-width: 767px)"
-                      srcset="img/picture/hero/hero-girl-mobile.jpg 1x, img/picture/hero/hero-girl-mobile2x.jpg 2x"
-                      width="362" height="568">
-                    <source media="(max-width: 1439px)"
-                      srcset="img/picture/hero/hero-girl-tablet.jpg 1x, img/picture/hero/hero-girl-tablet2x.jpg 2x"
-                      width="768" height="1024">
-                    <img src="img/picture/hero/hero-girl.jpg" srcset="img/picture/hero/hero-girl2x.jpg 2x"
-                      loading="lazy" alt="" width="1440" height="800">
-                  </picture>
-                </div>
-              </li>
-              <li class="hero__item swiper-slide">
-                <div class="hero__wrapper-image">
-                  <picture>
-                    <source type="image/webp" media="(max-width: 767px)"
-                      srcset="img/picture/hero/hero-family-mobile.webp 1x, img/picture/hero/hero-family-mobile2x.webp 2x">
-                    <source type="image/webp" media="(max-width: 1439px)"
-                      srcset="img/picture/hero/hero-family-tablet.webp 1x, img/picture/hero/hero-family-tablet2x.webp 2x">
-                    <source type="image/webp"
-                      srcset="img/picture/hero/hero-family.webp 1x, img/picture/hero/hero-family2x.webp 2x">
-                    <source media="(max-width: 767px)"
-                      srcset="img/picture/hero/hero-family-mobile.jpg 1x, img/picture/hero/hero-family-mobile2x.jpg 2x"
-                      width="362" height="568">
-                    <source media="(max-width: 1439px)"
-                      srcset="img/picture/hero/hero-family-tablet.jpg 1x, img/picture/hero/hero-family-tablet2x.jpg 2x"
-                      width="768" height="1024">
-                    <img src="img/picture/hero/hero-family.jpg" srcset="img/picture/hero/hero-family2x.jpg 2x"
-                      loading="lazy" alt="" width="1440" height="800">
-                  </picture>
-                </div>
-              </li>
-            </ul>
+          <div class="hero__container container">
+            <div class="hero__swiper swiper" data-hero-swiper>
+              <ul class="hero__list swiper-wrapper">
+                <li class="hero__item swiper-slide">
+                  <div class="hero__text-content">
+                    <h2>Глобальный профессиональный
+                      опыт обучения за рубежом</h2>
+                    <div class="hero__group-design">
+                      <div class="hero__group">
+                        <p>Погрузитесь в академическую программу, проходя практику в разных городах, ощущая настоящий
+                          студенческий стиль жизни!</p>
+                        <button class="hero__button button button__design">
+                          <span class="hero__button-description button__description">подробнее</span>
+                          <div class="hero__button-wrapper button__wrapper">
+                            <svg width="10" height="10">
+                              <use xlink:href="__spritemap#sprite-icon-arrow"></use>
+                            </svg>
+                          </div>
+                        </button>
+                      </div>
+                      <img src="img/icon/icon-angle.svg" alt="Логотип" width="26" height="26">
+                    </div>
+                    <div class="hero__pagination-design">
+                      <div class="hero__pagination hero-pagination swiper-pagination" data-swiper-hero-pagination></div>
+                      <img src="img/icon/icon-angle.svg" alt="Логотип" width="20" height="20">
+                    </div>
+                  </div>
+                  <div class="hero__wrapper-image">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)"
+                        srcset="img/picture/hero/hero-girl-mobile.webp 1x, img/picture/hero/hero-girl-mobile2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1439px)"
+                        srcset="img/picture/hero/hero-girl-tablet.webp 1x, img/picture/hero/hero-girl-tablet2x.webp 2x">
+                      <source type="image/webp"
+                        srcset="img/picture/hero/hero-girl.webp 1x, img/picture/hero/hero-girl2x.webp 2x">
+                      <source media="(max-width: 767px)"
+                        srcset="img/picture/hero/hero-girl-mobile.jpg 1x, img/picture/hero/hero-girl-mobile2x.jpg 2x"
+                        width="362" height="568">
+                      <source media="(max-width: 1439px)"
+                        srcset="img/picture/hero/hero-girl-tablet.jpg 1x, img/picture/hero/hero-girl-tablet2x.jpg 2x"
+                        width="768" height="1024">
+                      <img src="img/picture/hero/hero-girl.jpg" srcset="img/picture/hero/hero-girl2x.jpg 2x"
+                        loading="lazy" alt="" width="1440" height="800">
+                    </picture>
+                  </div>
+                </li>
+                <li class="hero__item swiper-slide">
+                  <div class="hero__text-content">
+                    <h2>Волонтёрские программы –
+                      внесите свой вклад в общество</h2>
+                    <div class="hero__group-design">
+                      <div class="hero__group">
+                        <p>Возможности для преподавания, органического сельского хозяйства, устойчивого образа жизни
+                          и другое.</p>
+                        <button class="hero__button button button__design">
+                          <span class="hero__button-description button__description">подробнее</span>
+                          <div class="hero__button-wrapper button__wrapper">
+                            <svg width="10" height="10">
+                              <use xlink:href="__spritemap#sprite-icon-arrow"></use>
+                            </svg>
+                          </div>
+                        </button>
+                      </div>
+                      <img src="img/icon/icon-angle.svg" alt="Логотип" width="26" height="26">
+                    </div>
+                    <div class="hero__pagination-design">
+                      <div class="hero__pagination hero-pagination swiper-pagination" data-swiper-hero-pagination></div>
+                      <img src="img/icon/icon-angle.svg" alt="Логотип" width="20" height="20">
+                    </div>
+                  </div>
+                  <div class="hero__wrapper-image">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)"
+                        srcset="img/picture/hero/hero-family-mobile.webp 1x, img/picture/hero/hero-family-mobile2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1439px)"
+                        srcset="img/picture/hero/hero-family-tablet.webp 1x, img/picture/hero/hero-family-tablet2x.webp 2x">
+                      <source type="image/webp"
+                        srcset="img/picture/hero/hero-family.webp 1x, img/picture/hero/hero-family2x.webp 2x">
+                      <source media="(max-width: 767px)"
+                        srcset="img/picture/hero/hero-family-mobile.jpg 1x, img/picture/hero/hero-family-mobile2x.jpg 2x"
+                        width="362" height="568">
+                      <source media="(max-width: 1439px)"
+                        srcset="img/picture/hero/hero-family-tablet.jpg 1x, img/picture/hero/hero-family-tablet2x.jpg 2x"
+                        width="768" height="1024">
+                      <img src="img/picture/hero/hero-family.jpg" srcset="img/picture/hero/hero-family2x.jpg 2x"
+                        loading="lazy" alt="" width="1440" height="800">
+                    </picture>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
         </section>
       </div>

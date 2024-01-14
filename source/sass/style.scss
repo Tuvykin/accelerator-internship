@@ -1,8 +1,8 @@
 // Vendor
 // ---------------------------------
 
-// Swiper 8.4.7
-@import "vendor/swiper";
+// Swiper
+@import 'swiper/css';
 
 // Global
 // ---------------------------------
@@ -21,3 +21,4 @@
 @import "blocks/main-header";
 @import "blocks/navigation";
 @import "blocks/hero";
+@import "blocks/hero-pagination";

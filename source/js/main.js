@@ -1,11 +1,5 @@
-// https://swiperjs.com/get-started#installation
-// import Swiper from 'swiper';
-// import {Navigation, Pagination} from 'swiper/modules';
-// import 'swiper/css';
-
-// import {iosVhFix} from './utils/ios-vh-fix';
-
-
+import {iosVhFix} from './utils/ios-vh-fix';
+import './utils/scroll-lock';
 import {initHeroSlider} from './modules/hero-swiper';
 
 // ---------------------------------
@@ -15,10 +9,11 @@ window.addEventListener('DOMContentLoaded', () => {
   // Utils
   // ---------------------------------
 
-  // iosVhFix();
+  iosVhFix();
 
   // Modules
   // ---------------------------------
+
   initHeroSlider();
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
