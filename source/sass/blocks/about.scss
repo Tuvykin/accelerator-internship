@@ -1,0 +1,138 @@
+.about__container {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.about__wrapper {
+  display: flex;
+  max-width: 1134px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.about__text-content-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  max-width: 477px;
+}
+
+.about__text-content-heading h2 {
+  margin: 0;
+  color: #316DC2;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 50px;
+  width: 100%;
+  text-align: left;
+  padding: 11px 0 19px;
+}
+
+.about__text-content-heading p {
+  margin: 0;
+  font-size: 22px;
+  line-height: 32px;
+  max-width: 398px;
+}
+
+.about__text-content-subtitle {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  max-width: 498px;
+}
+
+.about__text-content-subtitle h3 {
+  margin: 0;
+  color: #316DC2;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: left;
+  max-width: 166px;
+}
+
+.about__text-content-subtitle p {
+  margin: 0;
+}
+
+.about__button {
+  max-width: 277px;
+}
+
+.about__list {
+  margin: 0;
+  list-style-type: none;
+  padding: 50px 106px 32px;
+  border-radius: 20px;
+  background: #316DC2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 32px;
+  row-gap: 22px;
+}
+
+.about__item {
+  padding: 22px 0 0 20px;
+  max-width: 498px;
+  position: relative;
+}
+
+.about__group {
+  padding: 29px 59px;
+  display: flex;
+  gap: 24px;
+  border-radius: 16px;
+  border: 1px solid #F0EFE9;
+  min-height: 152px;
+  min-width: 478px;
+
+  &--primary {
+    justify-content: space-between;
+  }
+
+  &--secondary {
+    padding: 29px 53px;
+    gap: 46px;
+  }
+}
+
+.about__group b {
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.26px;
+  text-transform: uppercase;
+  color: $color-default-white;
+  width: min-content;
+  min-width: 134px;
+}
+
+.about__group p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 20px;
+  color: #F0EFE9;
+  margin: 0;
+  width: min-content;
+  min-width: 161px;
+}
+
+.about__group--primary p {
+  min-width: 178px;
+}
+
+.about__group--secondary p {
+  min-width: 190px;
+}
+
+.about__wrapper-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  width: 42px;
+  height: 42px;
+  background-color: #316DC2;
+}

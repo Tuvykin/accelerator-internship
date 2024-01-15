@@ -2,7 +2,7 @@ import Swiper from 'swiper';
 import {Pagination} from 'swiper/modules';
 
 export const initHeroSlider = () => {
-  const menu = ['', ''];
+  const menu = ['', '', ''];
   const swiperWrapper = document.querySelector('[data-hero-swiper]');
 
   return new Swiper(swiperWrapper, {
