@@ -17,3 +17,40 @@
   background-color: $color-default-white;
   border-radius: 30px;
 }
+
+.navigation__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.navigation__list {
+  margin: 0;
+  padding: 35px 25px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  background-color: #316DC2;
+  border-radius: 16px;
+  min-width: 286px;
+}
+
+.navigation__wrapper a {
+  text-decoration: none;
+  color: $color-default-white;
+  opacity: 0.7;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 0.32px;
+  text-transform: uppercase;
+  height: min-content;
+  display: block;
+}
+
+.navigation__item {
+  display: grid;
+  grid-template-columns: 1fr 12px;
+  column-gap: 10px;
+  row-gap: 20px;
+}

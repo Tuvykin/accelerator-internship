@@ -21,14 +21,57 @@
           <a class="navigation__logo" href="#" aria-current="page">
             <img src="img/icon/icon-logo.svg" alt="Логотип" width="30" height="30">
           </a>
-          <button class="navigation__button button button__design">
-            <span class="navigation__button-description button__description">меню</span>
-            <div class="navigation__button-wrapper button__wrapper">
-              <svg width="20" height="20">
-                <use xlink:href="__spritemap#sprite-icon-menu"></use>
-              </svg>
-            </div>
-          </button>
+          <div class="navigation__wrapper">
+            <button class="navigation__button button button__design">
+              <span class="navigation__button-description button__description">меню</span>
+              <div class="navigation__button-wrapper button__wrapper">
+                <svg width="20" height="20">
+                  <use xlink:href="__spritemap#sprite-icon-menu"></use>
+                </svg>
+              </div>
+            </button>
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a href="#">О проекте</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#">Программы</a>
+                <svg width="12" height="12">
+                  <use xlink:href="__spritemap#sprite-icon-arrow-menu"></use>
+                </svg>
+                <ul class="navigation__menu-list menu">
+                  <li class="menu__item">
+                    <a href="#">Стажировки</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="#">Волонтёрство</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="#">Учёба</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="#">Религия</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="navigation__item">
+                <a href="#">как поехать</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#">отзывы</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#">новости</a>
+                <svg width="12" height="12">
+                  <use xlink:href="__spritemap#sprite-icon-arrow-menu"></use>
+                </svg>
+              </li>
+              <li class="navigation__item">
+                <a href="#">контакты</a>
+              </li>
+
+            </ul>
+          </div>
         </nav>
         <section class="hero">
           <div class="hero__container container">
