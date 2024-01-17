@@ -7,6 +7,15 @@
   left: 50%;
   transform: translateX(-50%);
   z-index: 2;
+
+  @include vp-1440 {
+    width: 678px;
+  }
+
+  @include vp-768 {
+    width: 290px;
+    top: 20px;
+  }
 }
 
 .navigation__logo {
@@ -22,18 +31,23 @@
   display: flex;
   flex-direction: column;
   gap: 4px;
+
+  @include vp-768 {
+    max-width: 200px;
+  }
 }
 
 .navigation__list {
   margin: 0;
-  padding: 35px 25px;
+  padding: 33px 25px;
   list-style-type: none;
   display: flex;
   flex-direction: column;
-  gap: 23px;
+  gap: 22px;
   background-color: #316DC2;
   border-radius: 16px;
   min-width: 286px;
+  display: none;
 }
 
 .navigation__wrapper a {
@@ -52,5 +66,5 @@
   display: grid;
   grid-template-columns: 1fr 12px;
   column-gap: 10px;
-  row-gap: 20px;
+  row-gap: 14px;
 }
