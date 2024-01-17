@@ -1,6 +1,6 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import './utils/scroll-lock';
-import {initHeroSlider} from './modules/hero-swiper';
+import {initHeroSlider, initProgramsSlider} from './modules/init-swiper';
 
 // ---------------------------------
 
@@ -15,6 +15,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   initHeroSlider();
+  initProgramsSlider();
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана

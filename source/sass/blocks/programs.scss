@@ -11,7 +11,7 @@
 
 .programs__wrapper h2 {
   margin: 0;
-  padding-top: 10px;
+  padding: 4px 0 6px;
   color: #316DC2;
   font-size: 50px;
   font-weight: 400;
@@ -20,13 +20,15 @@
 
 .programs__button {
   margin-bottom: 6px;
+  gap: 30px;
+  padding-left: 28px;
 
   &--small {
     margin: 0;
   }
 }
 
-.programs__button-wrapper {
+.programs__button--small .programs__button-wrapper {
   width: 30px;
   height: 30px;
 }
@@ -43,15 +45,17 @@
   font-weight: 400;
   line-height: 26px;
   max-width: 194px;
+  width: 100%;
   background-color: $color-default-white;
   border-radius: 12px 12px 0px 0px;
-  padding: 15px 18px 0;
+  padding: 13px 18px 3px;
 }
 
 .programs__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  max-width: 1240px;
 }
 
 .programs__item {
@@ -60,7 +64,8 @@
   display: flex;
   align-items: flex-end;
   border-radius: 12px;
-  min-width: 392px;
+  max-width: 392px;
+  width: 100%;
 }
 
 .programs__wrapper-image {
@@ -94,4 +99,28 @@
 .programs__wrapper-design img {
   margin-left: -1px;
   transform: rotate(270deg);
+}
+
+.programs__wrapper-slider-button {
+  display: flex;
+  gap: 10px;
+  max-width: 54px;
+}
+
+.programs__slider-button {
+  color: #316DC2;
+  width: 22px;
+  height: 22px;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.programs__slider-button--prev svg {
+  transform: rotate(225deg);
+}
+
+.programs__slider-button--next svg {
+  transform: rotate(45deg);
 }
