@@ -206,3 +206,11 @@
     right: -9px;
   }
 }
+
+.hero__text-content br {
+  display: none;
+
+  @include vp-1440 {
+    display: block;
+  }
+}

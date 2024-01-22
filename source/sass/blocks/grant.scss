@@ -4,6 +4,12 @@
   color: $color-default-white;
   display: flex;
   gap: 138px;
+
+  @include vp-1440 {
+    padding: 100px 45px;
+    flex-direction: column;
+    gap: 40px;
+  }
 }
 
 .grant__text-content {
