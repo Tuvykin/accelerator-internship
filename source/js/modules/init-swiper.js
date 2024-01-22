@@ -1,5 +1,5 @@
 import Swiper from 'swiper';
-import {Pagination, Navigation} from 'swiper/modules';
+import {Pagination, Navigation, Autoplay} from 'swiper/modules';
 
 export const initHeroSlider = () => {
   const swiperWrapper = new Swiper('[data-hero-swiper]', {
@@ -11,7 +11,7 @@ export const initHeroSlider = () => {
       disableOnInteraction: false,
     },
     grabCursor: true,
-    modules: [Pagination],
+    modules: [Pagination, Autoplay],
     pagination: {
       el: '.swiper-slide-active [data-swiper-hero-pagination]',
       clickable: true,
@@ -76,6 +76,39 @@ export const initProgramsSlider = () => {
     pagination: {
       el: '[data-swiper-programs-pagination]',
       clickable: true,
+    },
+  });
+};
+
+export const initReviewsSlider = () => {
+  const swiperWrapper = document.querySelector('[data-reviews-swiper]');
+  const buttonNext = document.querySelector('[data-reviews-swiper-btn-next]');
+  const buttonPrev = document.querySelector('[data-reviews-swiper-btn-prev]');
+
+  return new Swiper(swiperWrapper, {
+    loop: true,
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 1,
+        initialSlide: 0,
+      },
+      // when window width is >= 768px
+      768: {
+        slidesPerView: 1.5,
+        spaceBetween: 30,
+        initialSlide: 0,
+      },
+      // when window width is >= 1440px
+      1440: {
+        slidesPerView: 2,
+        spaceBetween: 32,
+        initialSlide: 0,
+      },
+    },
+    navigation: {
+      nextEl: buttonNext,
+      prevEl: buttonPrev,
     },
   });
 };
