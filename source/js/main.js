@@ -1,6 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import './utils/scroll-lock';
 import {initHeroSlider, initProgramsSlider} from './modules/init-swiper';
+import './vendor/accordion';
 
 // ---------------------------------
 
