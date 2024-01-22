@@ -2,20 +2,21 @@ import Swiper from 'swiper';
 import {Pagination, Navigation} from 'swiper/modules';
 
 export const initHeroSlider = () => {
-  const menu = ['', '', ''];
-  const swiperWrapper = document.querySelector('[data-hero-swiper]');
-
-  return new Swiper(swiperWrapper, {
+  const swiperWrapper = new Swiper('[data-hero-swiper]', {
+    observer: true,
     modules: [Pagination],
-    loop: true,
-    grabCursor: true,
     pagination: {
-      el: '[data-swiper-hero-pagination]',
+      el: '.swiper-slide-active [data-swiper-hero-pagination]',
       clickable: true,
-      renderBullet: function (index, className) {
-        return `<span class="${ className }">${ menu[index] }</span>`;
-      },
+      type: 'bullets',
     },
+    on: {
+      slideChangeTransitionStart: function () {
+        swiperWrapper.pagination.init();
+        swiperWrapper.pagination.render();
+        swiperWrapper.pagination.update();
+      }
+    }
   });
 };
 
