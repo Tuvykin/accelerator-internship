@@ -4,6 +4,12 @@ import {Pagination, Navigation} from 'swiper/modules';
 export const initHeroSlider = () => {
   const swiperWrapper = new Swiper('[data-hero-swiper]', {
     observer: true,
+    loop: true,
+    autoHeight: true,
+    autoplay: {
+      delay: 3000,
+    },
+    grabCursor: true,
     modules: [Pagination],
     pagination: {
       el: '.swiper-slide-active [data-swiper-hero-pagination]',
@@ -16,7 +22,22 @@ export const initHeroSlider = () => {
         swiperWrapper.pagination.render();
         swiperWrapper.pagination.update();
       }
-    }
+    },
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        allowTouchMove: true,
+      },
+      // when window width is >= 768px
+      768: {
+
+        allowTouchMove: true,
+      },
+      // when window width is >= 1440px
+      1440: {
+        allowTouchMove: false,
+      },
+    },
   });
 };
 
@@ -40,7 +61,7 @@ export const initProgramsSlider = () => {
         spaceBetween: 30,
         initialSlide: 0.5,
       },
-      // when window width is >= 1200px
+      // when window width is >= 1440px
       1440: {
         slidesPerView: 3,
         spaceBetween: 32,
