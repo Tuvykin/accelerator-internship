@@ -16,6 +16,10 @@
   display: flex;
   flex-direction: column;
   gap: 40px;
+
+  @include vp-1440 {
+    gap: 36px;
+  }
 }
 
 .grant__text-content h2 {
@@ -23,11 +27,21 @@
   font-weight: 400;
   line-height: 50px;
   margin: 0;
+
+  @include vp-1440 {
+    font-size: 34px;
+    margin-bottom: 6px;
+  }
 }
 
 .grant__text-content p,
 .grant__wrapper p {
   margin: 0;
+
+  @include vp-1440 {
+    line-height: 20px;
+    min-height: 32px;
+  }
 }
 
 .grant__wrapper h3 {
@@ -37,6 +51,13 @@
   line-height: 36px;
   max-width: 373px;
   padding: 9px 0;
+
+  @include vp-1440 {
+    font-size: 28px;
+    line-height: 28px;
+    max-width: 636px;
+    padding: 6px 0;
+  }
 }
 
 .grant__list {
@@ -47,6 +68,13 @@
   flex-direction: column;
   gap: 8px;
   counter-reset:  item;
+
+  @include vp-1440 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 28px;
+    row-gap: 10px;
+  }
 }
 
 .grant__item {
@@ -79,6 +107,11 @@
   padding: 22px 25px;
   border-radius: 16px;
   border: 1px solid #F0EFE9;
+
+  @include vp-1440 {
+    padding: 25px 24px;
+    height: 100%;
+  }
 }
 
 .grant__wrapper {
@@ -86,4 +119,16 @@
   flex-direction: column;
   gap: 30px;
   max-width: 498px;
+
+  @include vp-1440 {
+    gap: 20px;
+    max-width: 678px;
+  }
+}
+
+.grant__wrapper-image img {
+
+  @include vp-1440 {
+    width: 100%;
+  }
 }
