@@ -6,10 +6,10 @@ export const initHeroSlider = () => {
     observer: true,
     loop: true,
     autoHeight: true,
-    autoplay: {
-      delay: 3000,
-      disableOnInteraction: false,
-    },
+    // autoplay: {
+    //   delay: 3000,
+    //   disableOnInteraction: false,
+    // },
     grabCursor: true,
     modules: [Pagination, Autoplay],
     pagination: {

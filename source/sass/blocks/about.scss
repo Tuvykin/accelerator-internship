@@ -2,6 +2,10 @@
   display: flex;
   flex-direction: column;
   gap: 60px;
+
+  @include vp-768 {
+    gap: 40px;
+  }
 }
 
 .about__wrapper {
@@ -14,6 +18,10 @@
     flex-direction: column;
     gap: 34px;
   }
+
+  @include vp-768 {
+    gap: 35px;
+  }
 }
 
 .about__text-content-heading {
@@ -24,6 +32,10 @@
 
   @include vp-1440 {
     gap: 24px;
+  }
+
+  @include vp-768 {
+    gap: 10px;
   }
 }
 
@@ -40,6 +52,12 @@
     font-size: 34px;
     line-height: 50px;
   }
+
+  @include vp-768 {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 2px 1px 3px;
+  }
 }
 
 .about__text-content-heading p {
@@ -53,6 +71,11 @@
     line-height: 26px;
     max-width: 489px;
   }
+
+  @include vp-768 {
+    font-size: 16px;
+    line-height: 22px;
+  }
 }
 
 .about__text-content-subtitle {
@@ -64,6 +87,10 @@
   @include vp-1440 {
     gap: 22px;
   }
+
+  @include vp-768 {
+    gap: 10px;
+  }
 }
 
 .about__text-content-subtitle h3 {
@@ -73,12 +100,16 @@
   font-weight: 400;
   line-height: 36px;
   text-align: left;
-  max-width: 166px;
 
   @include vp-1440 {
     font-size: 28px;
-    line-height: 28px;
-    max-width: 142px;
+    line-height: 28px
+  }
+
+  @include vp-768 {
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: -4px;
   }
 }
 
@@ -88,6 +119,10 @@
   @include vp-1440 {
     line-height: 20px;
   }
+
+  @include vp-768 {
+    font-size: 14px;
+  }
 }
 
 .about__button {
@@ -96,6 +131,15 @@
   @include vp-1440 {
     margin-top: 10px
   }
+
+  @include vp-768 {
+    max-width: 221px;
+    margin-top: 15px
+  }
+}
+
+.about__button-description {
+  justify-self: center;
 }
 
 .about__list {
@@ -112,6 +156,13 @@
     padding: 40px;
     column-gap: 30px;
     row-gap: 20px;
+  }
+
+  @include vp-768 {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding: 20px 20px 40px 10px;
   }
 }
 
@@ -151,6 +202,14 @@
     min-width: 264px;
     min-height: 168px;
   }
+
+  @include vp-768 {
+    padding: 19px;
+    padding-bottom: 23px;
+    gap: 4px;
+    min-height: 128px;
+    min-width: 240px;
+  }
 }
 
 .about__group b {
@@ -165,8 +224,15 @@
 
   @include vp-1440 {
     font-size: 20px;
-    line-height: 22px; /* 110% */
+    line-height: 22px;
     letter-spacing: 0.2px;
+  }
+
+  @include vp-768 {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.16px;
+    min-width: 200px;
   }
 }
 
@@ -181,6 +247,11 @@
 
   @include vp-1440 {
     min-width: 218px;
+  }
+
+  @include vp-768 {
+    font-size: 14px;
+    line-height: 20px;
   }
 }
 

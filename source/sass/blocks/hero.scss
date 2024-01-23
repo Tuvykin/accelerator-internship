@@ -36,7 +36,7 @@
 }
 
 .hero__text-content {
-  padding: 84px 100px 50px;
+  padding: 84px 100px 60px;
   position: relative;
   z-index: 1;
   display: flex;
@@ -53,7 +53,7 @@
 
 .hero__text-content h2 {
   margin: 0;
-  padding: 40px 50px 30px;
+  padding: 41px 50px 30px;
   max-width: 968px;
   color: #316DC2;
   font-size: 54px;
@@ -64,14 +64,14 @@
   margin-top: -1px;
 
   @include vp-1440 {
-    padding: 30px 40px 24px;
+    padding: 31px 40px 24px;
     max-width: 659px;
     font-size: 36px;
     line-height: 44px;
   }
 
   @include vp-768 {
-    padding: 20px 14px 13px;
+    padding: 21px 14px 16px;
     max-width: 290px;
     font-size: 22px;
     line-height: 26px;
@@ -95,17 +95,20 @@
 }
 
 .hero__group {
-  padding: 0 50px 35px;
+  padding: 0 50px 28px;
   border-radius: 0px 0px 30px 30px;
   display: flex;
   gap: 30px;
   align-items: center;
   max-width: 772px;
   background-color: $color-default-white;
+  margin-top: -7px;
 
   @include vp-1440 {
-    padding: 0 40px 35px;
+    padding: 0 40px 33px;
     max-width: 591px;
+    margin: 0;
+    align-items: flex-start;
   }
 
   @include vp-768 {
@@ -124,26 +127,29 @@
 
   @include vp-1440 {
     line-height: 20px;
+    margin-top: -2px;
   }
 
   @include vp-768 {
     font-size: 14px;
-    padding: 0 14px 11px;
+    padding: 0 14px 10px;
     max-width: 267px;
     width: 100%;
     background-color: $color-default-white;
     border-radius: 0px 0px 14px 0px;
+    margin-top: -5px;
   }
 }
 
 .hero__button {
   gap: 25px;
   padding-left: 29px;
+  min-width: 196px;
 
   @include vp-768 {
-    gap: 16px;
+    gap: 15px;
     padding-left: 19px;
-    grid-template-columns: 1fr 34px;
+    min-width: 152px;
   }
 }
 
@@ -167,32 +173,15 @@
   }
 }
 
-.hero__button-wrapper {
-
-  @include vp-768 {
-    width: 34px;
-    height: 34px;
-  }
-}
-
-.hero__button-description {
-
-  @include vp-768 {
-    font-size: 12px;
-    line-height: 12px;
-    letter-spacing: 0.24px;
-  }
-}
-
 .hero__button-container {
 
   @include vp-768 {
-    padding: 10px 15px;
+    padding: 11px 15px 10px;
     border-radius: 0px 0px 14px 14px;
     background-color: $color-default-white;
     margin-top: -1px;
     position: relative;
-    max-width: 250px;
+    max-width: 192px;
   }
 }
 

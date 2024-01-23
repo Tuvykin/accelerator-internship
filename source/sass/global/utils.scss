@@ -27,6 +27,14 @@
       gap: 100px;
     }
   }
+
+  @include vp-768 {
+    gap: 60px;
+
+    main {
+      gap: 60px;
+    }
+  }
 }
 
 .visually-hidden {
