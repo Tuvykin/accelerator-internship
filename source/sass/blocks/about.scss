@@ -272,3 +272,11 @@
   height: 42px;
   background-color: #316DC2;
 }
+
+.about__group br {
+  display: none;
+
+  @include vp-768 {
+    display: block;
+  }
+}

@@ -27,7 +27,8 @@
   flex-direction: column;
   gap: 25px;
   max-width: 604px;
-  min-height: 456px;
+  max-height: 456px;
+  height: auto;
 }
 
 .reviews__wrapper {
