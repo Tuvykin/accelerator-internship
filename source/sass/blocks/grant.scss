@@ -10,6 +10,11 @@
     flex-direction: column;
     gap: 40px;
   }
+
+  @include vp-768 {
+    padding: 67px 15px;
+    gap: 30px;
+  }
 }
 
 .grant__text-content {
@@ -19,6 +24,10 @@
 
   @include vp-1440 {
     gap: 36px;
+  }
+
+  @include vp-768 {
+    gap: 25px;
   }
 }
 
@@ -32,6 +41,13 @@
     font-size: 34px;
     margin-bottom: 6px;
   }
+
+  @include vp-768 {
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0;
+    padding: 2px 6px 3px 0;
+  }
 }
 
 .grant__text-content p,
@@ -41,6 +57,18 @@
   @include vp-1440 {
     line-height: 20px;
     min-height: 32px;
+  }
+
+  @include vp-768 {
+    font-size: 16px;
+  }
+}
+
+.grant__wrapper p {
+
+  @include vp-768 {
+    font-size: 14px;
+    min-height: 10px;
   }
 }
 
@@ -58,6 +86,12 @@
     max-width: 636px;
     padding: 6px 0;
   }
+
+  @include vp-768 {
+    font-size: 18px;
+    line-height: 22px;
+    padding: 6px 10px 10px 0;
+  }
 }
 
 .grant__list {
@@ -74,6 +108,12 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 28px;
     row-gap: 10px;
+  }
+
+  @include vp-768 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
 }
 
@@ -101,6 +141,19 @@
     z-index: 1;
     background-color: #316DC2
   }
+
+  @include vp-768 {
+    padding-left: 15px;
+    padding-top: 5px;
+
+    &::before {
+      width: 32px;
+      height: 32px;
+      padding: 10px 4px;
+      font-size: 18px;
+      line-height: 18px;
+    }
+  }
 }
 
 .grant__group {
@@ -111,6 +164,10 @@
   @include vp-1440 {
     padding: 25px 24px;
     height: 100%;
+  }
+
+  @include vp-768 {
+    padding: 18px 24px;
   }
 }
 
@@ -123,6 +180,10 @@
   @include vp-1440 {
     gap: 20px;
     max-width: 678px;
+  }
+
+  @include vp-768 {
+    gap: 10px;
   }
 }
 
