@@ -24,7 +24,7 @@
       <div class="main-header__container container">
         <nav class="navigation">
           <a class="navigation__logo" href="#" aria-current="page">
-            <img src="img/icon/icon-logo.svg" alt="Логотип" width="30" height="30">
+            <img src="img/icon/icon-logo.svg" alt="Логотип" width="52" height="52">
           </a>
           <div class="navigation__wrapper">
             <button class="navigation__button button">
@@ -964,35 +964,86 @@
             </div>
           </div>
           <span class="contacts__design"></span>
-          <div class="contacts__container-image">
-            <div class="contacts__wrapper-image">
-              <picture>
-                <source type="image/webp" media="(max-width: 767px)"
-                  srcset="img/picture/contacts/map-mobile.webp 1x, img/picture/contacts/map-mobile2x.webp 2x">
-                <source type="image/webp" media="(max-width: 1439px)"
-                  srcset="img/picture/contacts/map-tablet.webp 1x, img/picture/contacts/map-tablet2x.webp 2x">
-                <source type="image/webp" srcset="img/picture/contacts/map.webp 1x, img/picture/contacts/map2x.webp 2x">
-                <source media="(max-width: 767px)"
-                  srcset="img/picture/contacts/map-mobile.png 1x, img/picture/contacts/map-mobile2x.png 2x" width="290"
-                  height="240">
-                <source media="(max-width: 1439px)"
-                  srcset="img/picture/contacts/map-tablet.png 1x, img/picture/contacts/map-tablet2x.png 2x" width="678"
-                  height="500">
-                <img src="img/picture/contacts/map.png" srcset="img/picture/contacts/map2x.png 2x" loading="lazy" alt=""
-                  width="1240" height="500">
-              </picture>
-            </div>
-            <div class="contacts__wrapper-marker">
-              <svg width="70" height="70">
-                <use xlink:href="__spritemap#sprite-icon-map"></use>
-              </svg>
-            </div>
+          <div class="contacts__wrapper-image">
+            <picture>
+              <source type="image/webp" media="(max-width: 767px)"
+                srcset="img/picture/contacts/map-mobile.webp 1x, img/picture/contacts/map-mobile2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1439px)"
+                srcset="img/picture/contacts/map-tablet.webp 1x, img/picture/contacts/map-tablet2x.webp 2x">
+              <source type="image/webp" srcset="img/picture/contacts/map.webp 1x, img/picture/contacts/map2x.webp 2x">
+              <source media="(max-width: 767px)"
+                srcset="img/picture/contacts/map-mobile.png 1x, img/picture/contacts/map-mobile2x.png 2x" width="290"
+                height="240">
+              <source media="(max-width: 1439px)"
+                srcset="img/picture/contacts/map-tablet.png 1x, img/picture/contacts/map-tablet2x.png 2x" width="678"
+                height="500">
+              <img src="img/picture/contacts/map.png" srcset="img/picture/contacts/map2x.png 2x" loading="lazy"
+                alt="Наше местонахождение на карте" width="1240" height="500">
+            </picture>
           </div>
         </div>
       </section>
       <!-- <div data-test="form">form</div> -->
     </main>
-    <!-- <footer data-test="footer">footer</footer> -->
+    <footer class="main-footer" data-test="footer">
+      <div class="main-footer__container container">
+        <div class="main-footer__wrapper">
+          <a class="navigation__logo" href="#" aria-current="page">
+            <img src="img/icon/icon-logo.svg" alt="Логотип" width="52" height="52">
+          </a>
+          <ul class="main-footer__list">
+            <li class="main-footer__item">
+              <a href="#">О проекте</a>
+            </li>
+            <li class="main-footer__item">
+              <a href="#">Программы</a>
+            </li>
+            <li class="main-footer__item">
+              <a href="#">Как поехать</a>
+            </li>
+            <li class="main-footer__item">
+              <a href="#">Как поехать</a>
+            </li>
+            <li class="main-footer__item">
+              <a href="#">Новости</a>
+            </li>
+            <li class="main-footer__item">
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <ul class="main-footer__social-list social">
+          <li class="social__item">
+            <a class="social__link" href="#" target="_blank">
+              <span class="visually-hidden">Вконтакте</span>
+              <svg width="36" height="36">
+                <use xlink:href="__spritemap#sprite-icon-vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#" target="_blank">
+              <span class="visually-hidden">Одноклассники</span>
+              <svg width="36" height="36">
+                <use xlink:href="__spritemap#sprite-icon-ok"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#" target="_blank">
+              <span class="visually-hidden">Reddit</span>
+              <svg width="36" height="36">
+                <use xlink:href="__spritemap#sprite-icon-reddit"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <div class="main-footer__group">
+          <p>Стажировка © 2023 Все права защищены</p>
+          <a href="#">Политика конфиденциальности</a>
+        </div>
+      </div>
+    </footer>
   </div>
   <script type="module" src="js/main.js"></script>
 </body>

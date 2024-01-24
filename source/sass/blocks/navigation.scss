@@ -7,6 +7,7 @@
   left: 50%;
   transform: translateX(-50%);
   z-index: 2;
+  align-items: center;
 
   @include vp-1440 {
     width: 678px;
@@ -22,9 +23,6 @@
   display: block;
   width: 52px;
   height: 52px;
-  padding: 10px;
-  background-color: $color-default-white;
-  border-radius: 30px;
 }
 
 .navigation__wrapper {
