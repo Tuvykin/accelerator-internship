@@ -964,22 +964,29 @@
             </div>
           </div>
           <span class="contacts__design"></span>
-          <div class="contacts__wrapper-image">
-            <picture>
-              <source type="image/webp" media="(max-width: 767px)"
-                srcset="img/picture/contacts/map-mobile.webp 1x, img/picture/contacts/map-mobile2x.webp 2x">
-              <source type="image/webp" media="(max-width: 1439px)"
-                srcset="img/picture/contacts/map-tablet.webp 1x, img/picture/contacts/map-tablet2x.webp 2x">
-              <source type="image/webp" srcset="img/picture/hero/map.webp 1x, img/picture/contacts/map2x.webp 2x">
-              <source media="(max-width: 767px)"
-                srcset="img/picture/contacts/map-mobile.png 1x, img/picture/contacts/map-mobile2x.png 2x" width="362"
-                height="568">
-              <source media="(max-width: 1439px)"
-                srcset="img/picture/contacts/map-tablet.png 1x, img/picture/contacts/map-tablet2x.png 2x" width="768"
-                height="1024">
-              <img src="img/picture/contacts/map.png" srcset="img/picture/contacts/map2x.png 2x" loading="lazy" alt=""
-                width="1240" height="500">
-            </picture>
+          <div class="contacts__container-image">
+            <div class="contacts__wrapper-image">
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="img/picture/contacts/map-mobile.webp 1x, img/picture/contacts/map-mobile2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1439px)"
+                  srcset="img/picture/contacts/map-tablet.webp 1x, img/picture/contacts/map-tablet2x.webp 2x">
+                <source type="image/webp" srcset="img/picture/contacts/map.webp 1x, img/picture/contacts/map2x.webp 2x">
+                <source media="(max-width: 767px)"
+                  srcset="img/picture/contacts/map-mobile.png 1x, img/picture/contacts/map-mobile2x.png 2x" width="290"
+                  height="240">
+                <source media="(max-width: 1439px)"
+                  srcset="img/picture/contacts/map-tablet.png 1x, img/picture/contacts/map-tablet2x.png 2x" width="678"
+                  height="500">
+                <img src="img/picture/contacts/map.png" srcset="img/picture/contacts/map2x.png 2x" loading="lazy" alt=""
+                  width="1240" height="500">
+              </picture>
+            </div>
+            <div class="contacts__wrapper-marker">
+              <svg width="70" height="70">
+                <use xlink:href="__spritemap#sprite-icon-map"></use>
+              </svg>
+            </div>
           </div>
         </div>
       </section>
