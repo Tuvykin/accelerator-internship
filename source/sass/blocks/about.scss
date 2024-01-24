@@ -200,14 +200,12 @@
     flex-direction: column;
     gap: 8px;
     min-width: 264px;
-    min-height: 168px;
   }
 
   @include vp-768 {
     padding: 19px;
     padding-bottom: 23px;
     gap: 4px;
-    min-height: 128px;
     min-width: 240px;
   }
 }

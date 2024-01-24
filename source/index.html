@@ -786,7 +786,7 @@
               </li>
               <li class="faq__item faq__item--size" data-accordion="element">
                 <div class="faq__wrapper" data-accordion="button">
-                  <h3>Признаётся ли учёба в рамках проекта<br> для дальнейшего обучения?</h3>
+                  <h3>Признаётся ли учёба в рамках проекта<br> для дальнейшего&nbsp;обучения?</h3>
                   <button class="faq__button button" type="button">
                     <span class="faq__button-wrapper faq__button-wrapper--minus">
                       <svg width="20" height="2">
@@ -942,7 +942,47 @@
           </div>
         </div>
       </section>
-      <!-- <div data-test="contacts">contacts</div> -->
+      <section class="contacts" data-test="contacts">
+        <div class="contacts__container container">
+          <div class="contacts__text-content">
+            <h2>Контакты</h2>
+            <div class="contacts__wrapper">
+              <div class="contacts__group">
+                <h3>центральный офис</h3>
+                <a href="#">
+                  г. Новосибирск, ул. Щетинкина 68, культурный центр
+                </a>
+              </div>
+              <div class="contacts__group">
+                <h3>Телефон</h3>
+                <a href="tel:+796387687676">+7 963 876 876 76</a>
+              </div>
+              <div class="contacts__group">
+                <h3>Email</h3>
+                <a href="mailto:info@stazh.ru">Info@stazh.ru</a>
+              </div>
+            </div>
+          </div>
+          <span class="contacts__design"></span>
+          <div class="contacts__wrapper-image">
+            <picture>
+              <source type="image/webp" media="(max-width: 767px)"
+                srcset="img/picture/contacts/map-mobile.webp 1x, img/picture/contacts/map-mobile2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1439px)"
+                srcset="img/picture/contacts/map-tablet.webp 1x, img/picture/contacts/map-tablet2x.webp 2x">
+              <source type="image/webp" srcset="img/picture/hero/map.webp 1x, img/picture/contacts/map2x.webp 2x">
+              <source media="(max-width: 767px)"
+                srcset="img/picture/contacts/map-mobile.png 1x, img/picture/contacts/map-mobile2x.png 2x" width="362"
+                height="568">
+              <source media="(max-width: 1439px)"
+                srcset="img/picture/contacts/map-tablet.png 1x, img/picture/contacts/map-tablet2x.png 2x" width="768"
+                height="1024">
+              <img src="img/picture/contacts/map.png" srcset="img/picture/contacts/map2x.png 2x" loading="lazy" alt=""
+                width="1240" height="500">
+            </picture>
+          </div>
+        </div>
+      </section>
       <!-- <div data-test="form">form</div> -->
     </main>
     <!-- <footer data-test="footer">footer</footer> -->

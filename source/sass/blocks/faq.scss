@@ -4,6 +4,14 @@
   gap: 60px;
   align-items: center;
   color: #316DC2;
+
+  @include vp-1440 {
+    gap: 40px;
+  }
+
+  @include vp-768 {
+    gap: 30px;
+  }
 }
 
 .faq__container h2 {
@@ -12,6 +20,21 @@
   font-weight: 400;
   line-height: 50px;
   padding: 5px;
+
+  @include vp-1440 {
+    font-size: 34px;
+    padding: 0;
+    min-width: 313px;
+    text-align: center;
+  }
+
+  @include vp-768 {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 2px 0 3px;
+    min-width: 290px;
+    text-align: center;
+  }
 }
 
 .faq__list {
@@ -32,6 +55,21 @@
   &--size {
     padding: 32px 39px;
   }
+
+  @include vp-1440 {
+    padding: 29px;
+    min-width: 678px;
+
+    &--size {
+      padding: 24px 29px;
+    }
+  }
+
+  @include vp-768 {
+    min-width: auto;
+    max-width: 290px;
+    padding: 19px 14px;
+  }
 }
 
 .faq__text-content h3 {
@@ -39,17 +77,37 @@
   font-size: 28px;
   font-weight: 400;
   line-height: 34px;
+
+  @include vp-1440 {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  @include vp-768 {
+    font-size: 16px;
+    line-height: 18px;
+  }
 }
 
 .faq__wrapper {
   display: grid;
   grid-template-columns: 1fr 40px;
   column-gap: 10px;
+  align-items: center;
 }
 
 .faq__text-content p {
   margin: 0;
   max-width: 690px;
+  color: #F0EFE9;
+
+  @include vp-1440 {
+    line-height: 20px;
+  }
+
+  @include vp-768 {
+    font-size: 14px;
+  }
 }
 
 .faq__item.is-active {
@@ -59,6 +117,16 @@
   background-color: #316DC2;
   color: $color-default-white;
   padding-bottom: 32px;
+
+  @include vp-1440 {
+    gap: 16px;
+    padding-bottom: 25px;
+  }
+
+  @include vp-768 {
+    gap: 15px;
+    padding-bottom: 14px;
+  }
 }
 
 .faq__button {
