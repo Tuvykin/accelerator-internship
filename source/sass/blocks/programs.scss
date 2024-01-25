@@ -208,8 +208,5 @@
 }
 
 .programs__wrapper-image img {
-
-  @include vp-768 {
-    border-radius: 12px;
-  }
+  border-radius: 12px;
 }

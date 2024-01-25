@@ -189,6 +189,7 @@
 }
 
 .grant__wrapper-image img {
+  border-radius: 20px;
 
   @include vp-1440 {
     width: 100%;
