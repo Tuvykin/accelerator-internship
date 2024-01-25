@@ -254,6 +254,10 @@
 
 .about__group--primary p {
   min-width: 178px;
+
+  @include vp-768 {
+    min-width: 200px;
+  }
 }
 
 .about__group--secondary p {

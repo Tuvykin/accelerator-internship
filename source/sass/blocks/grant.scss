@@ -179,7 +179,6 @@
 
   @include vp-1440 {
     gap: 20px;
-    max-width: 678px;
   }
 
   @include vp-768 {
@@ -191,5 +190,12 @@
 
   @include vp-1440 {
     width: 100%;
+  }
+}
+
+.grant__text-content br {
+
+  @include vp-768 {
+    display: none;
   }
 }

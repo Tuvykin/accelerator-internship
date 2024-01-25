@@ -221,7 +221,7 @@
       </div>
     </header>
     <main>
-      <section class="about" data-test="about">
+      <section class="about" id="about" data-test="about">
         <div class="about__container container">
           <div class="about__wrapper">
             <div class="about__text-content-heading">
@@ -260,7 +260,7 @@
             <li class="about__item">
               <div class="about__group">
                 <b>Более<br> 3000 участников</b>
-                <p>уже успешно прошли программу
+                <p>уже успешно прошли<br> программу
                   от «Стажировка» и остались в разных
                   странах</p>
               </div>
@@ -292,19 +292,17 @@
           </ul>
         </div>
       </section>
-      <section class="programs" data-test="programs">
+      <section class="programs" id="programs" data-test="programs">
         <div class="programs__container container">
-          <div class="programs__wrapper">
-            <h2>Программы</h2>
-            <button class="programs__button button">
-              <span class="programs__button-description button__description">все программы</span>
-              <div class="programs__button-wrapper button__wrapper">
-                <svg width="10" height="10">
-                  <use xlink:href="__spritemap#sprite-icon-arrow"></use>
-                </svg>
-              </div>
-            </button>
-          </div>
+          <h2>Программы</h2>
+          <button class="programs__button button">
+            <span class="programs__button-description button__description">все программы</span>
+            <div class="programs__button-wrapper button__wrapper">
+              <svg width="10" height="10">
+                <use xlink:href="__spritemap#sprite-icon-arrow"></use>
+              </svg>
+            </div>
+          </button>
           <div class="programs__swiper swiper" data-programs-swiper>
             <ul class="programs__list swiper-wrapper">
               <li class="programs__item swiper-slide">
@@ -333,13 +331,13 @@
                     <source type="image/webp"
                       srcset="img/picture/programs/programs-first.webp 1x, img/picture/programs/programs-first2x.webp 2x">
                     <source media="(max-width: 767px)"
-                      srcset="img/picture/programs/programs-first-mobile.jpg 1x, img/picture/programs/programs-first-mobile2x.jpg 2x"
+                      srcset="img/picture/programs/programs-first-mobile.png 1x, img/picture/programs/programs-first-mobile2x.png 2x"
                       width="324" height="420">
                     <source media="(max-width: 1439px)"
-                      srcset="img/picture/programs/programs-first-tablet.jpg 1x, img/picture/programs/programs-first-tablet2x.jpg 2x"
+                      srcset="img/picture/programs/programs-first-tablet.png 1x, img/picture/programs/programs-first-tablet2x.png 2x"
                       width="324" height="420">
-                    <img src="img/picture/programs/programs-first.jpg"
-                      srcset="img/picture/programs/programs-first2x.jpg 2x" loading="lazy" alt="" width="392"
+                    <img src="img/picture/programs/programs-first.png"
+                      srcset="img/picture/programs/programs-first2x.png 2x" loading="lazy" alt="" width="392"
                       height="420">
                   </picture>
                 </div>
@@ -370,13 +368,13 @@
                     <source type="image/webp"
                       srcset="img/picture/programs/programs-second.webp 1x, img/picture/programs/programs-second2x.webp 2x">
                     <source media="(max-width: 767px)"
-                      srcset="img/picture/programs/programs-second-mobile.jpg 1x, img/picture/programs/programs-second-mobile2x.jpg 2x"
+                      srcset="img/picture/programs/programs-second-mobile.png 1x, img/picture/programs/programs-second-mobile2x.png 2x"
                       width="324" height="420">
                     <source media="(max-width: 1439px)"
-                      srcset="img/picture/programs/programs-second-tablet.jpg 1x, img/picture/programs/programs-second-tablet2x.jpg 2x"
+                      srcset="img/picture/programs/programs-second-tablet.png 1x, img/picture/programs/programs-second-tablet2x.png 2x"
                       width="324" height="420">
-                    <img src="img/picture/programs/programs-second.jpg"
-                      srcset="img/picture/programs/programs-second2x.jpg 2x" loading="lazy" alt="" width="392"
+                    <img src="img/picture/programs/programs-second.png"
+                      srcset="img/picture/programs/programs-second2x.png 2x" loading="lazy" alt="" width="392"
                       height="420">
                   </picture>
                 </div>
@@ -407,13 +405,13 @@
                     <source type="image/webp"
                       srcset="img/picture/programs/programs-third.webp 1x, img/picture/programs/programs-third2x.webp 2x">
                     <source media="(max-width: 767px)"
-                      srcset="img/picture/programs/programs-third-mobile.jpg 1x, img/picture/programs/programs-third-mobile2x.jpg 2x"
+                      srcset="img/picture/programs/programs-third-mobile.png 1x, img/picture/programs/programs-third-mobile2x.png 2x"
                       width="324" height="420">
                     <source media="(max-width: 1439px)"
-                      srcset="img/picture/programs/programs-third-tablet.jpg 1x, img/picture/programs/programs-third-tablet2x.jpg 2x"
+                      srcset="img/picture/programs/programs-third-tablet.png 1x, img/picture/programs/programs-third-tablet2x.png 2x"
                       width="324" height="420">
-                    <img src="img/picture/programs/programs-third.jpg"
-                      srcset="img/picture/programs/programs-third2x.jpg 2x" loading="lazy" alt="" width="392"
+                    <img src="img/picture/programs/programs-third.png"
+                      srcset="img/picture/programs/programs-third2x.png 2x" loading="lazy" alt="" width="392"
                       height="420">
                   </picture>
                 </div>
@@ -444,13 +442,13 @@
                     <source type="image/webp"
                       srcset="img/picture/programs/programs-first.webp 1x, img/picture/programs/programs-first2x.webp 2x">
                     <source media="(max-width: 767px)"
-                      srcset="img/picture/programs/programs-first-mobile.jpg 1x, img/picture/programs/programs-first-mobile2x.jpg 2x"
+                      srcset="img/picture/programs/programs-first-mobile.png 1x, img/picture/programs/programs-first-mobile2x.png 2x"
                       width="324" height="420">
                     <source media="(max-width: 1439px)"
-                      srcset="img/picture/programs/programs-first-tablet.jpg 1x, img/picture/programs/programs-first-tablet2x.jpg 2x"
+                      srcset="img/picture/programs/programs-first-tablet.png 1x, img/picture/programs/programs-first-tablet2x.png 2x"
                       width="324" height="420">
-                    <img src="img/picture/programs/programs-first.jpg"
-                      srcset="img/picture/programs/programs-first2x.jpg 2x" loading="lazy" alt="" width="392"
+                    <img src="img/picture/programs/programs-first.png"
+                      srcset="img/picture/programs/programs-first2x.png 2x" loading="lazy" alt="" width="392"
                       height="420">
                   </picture>
                 </div>
@@ -481,13 +479,13 @@
                     <source type="image/webp"
                       srcset="img/picture/programs/programs-second.webp 1x, img/picture/programs/programs-second2x.webp 2x">
                     <source media="(max-width: 767px)"
-                      srcset="img/picture/programs/programs-second-mobile.jpg 1x, img/picture/programs/programs-second-mobile2x.jpg 2x"
+                      srcset="img/picture/programs/programs-second-mobile.png 1x, img/picture/programs/programs-second-mobile2x.png 2x"
                       width="324" height="420">
                     <source media="(max-width: 1439px)"
-                      srcset="img/picture/programs/programs-second-tablet.jpg 1x, img/picture/programs/programs-second-tablet2x.jpg 2x"
+                      srcset="img/picture/programs/programs-second-tablet.png 1x, img/picture/programs/programs-second-tablet2x.png 2x"
                       width="324" height="420">
-                    <img src="img/picture/programs/programs-second.jpg"
-                      srcset="img/picture/programs/programs-second2x.jpg 2x" loading="lazy" alt="" width="392"
+                    <img src="img/picture/programs/programs-second.png"
+                      srcset="img/picture/programs/programs-second2x.png 2x" loading="lazy" alt="" width="392"
                       height="420">
                   </picture>
                 </div>
@@ -518,13 +516,13 @@
                     <source type="image/webp"
                       srcset="img/picture/programs/programs-third.webp 1x, img/picture/programs/programs-third2x.webp 2x">
                     <source media="(max-width: 767px)"
-                      srcset="img/picture/programs/programs-third-mobile.jpg 1x, img/picture/programs/programs-third-mobile2x.jpg 2x"
+                      srcset="img/picture/programs/programs-third-mobile.png 1x, img/picture/programs/programs-third-mobile2x.png 2x"
                       width="324" height="420">
                     <source media="(max-width: 1439px)"
-                      srcset="img/picture/programs/programs-third-tablet.jpg 1x, img/picture/programs/programs-third-tablet2x.jpg 2x"
+                      srcset="img/picture/programs/programs-third-tablet.png 1x, img/picture/programs/programs-third-tablet2x.png 2x"
                       width="324" height="420">
-                    <img src="img/picture/programs/programs-third.jpg"
-                      srcset="img/picture/programs/programs-third2x.jpg 2x" loading="lazy" alt="" width="392"
+                    <img src="img/picture/programs/programs-third.png"
+                      srcset="img/picture/programs/programs-third2x.png 2x" loading="lazy" alt="" width="392"
                       height="420">
                   </picture>
                 </div>
@@ -555,13 +553,13 @@
                     <source type="image/webp"
                       srcset="img/picture/programs/programs-first.webp 1x, img/picture/programs/programs-first2x.webp 2x">
                     <source media="(max-width: 767px)"
-                      srcset="img/picture/programs/programs-first-mobile.jpg 1x, img/picture/programs/programs-first-mobile2x.jpg 2x"
+                      srcset="img/picture/programs/programs-first-mobile.png 1x, img/picture/programs/programs-first-mobile2x.png 2x"
                       width="324" height="420">
                     <source media="(max-width: 1439px)"
-                      srcset="img/picture/programs/programs-first-tablet.jpg 1x, img/picture/programs/programs-first-tablet2x.jpg 2x"
+                      srcset="img/picture/programs/programs-first-tablet.png 1x, img/picture/programs/programs-first-tablet2x.png 2x"
                       width="324" height="420">
-                    <img src="img/picture/programs/programs-first.jpg"
-                      srcset="img/picture/programs/programs-first2x.jpg 2x" loading="lazy" alt="" width="392"
+                    <img src="img/picture/programs/programs-first.png"
+                      srcset="img/picture/programs/programs-first2x.png 2x" loading="lazy" alt="" width="392"
                       height="420">
                   </picture>
                 </div>
@@ -592,13 +590,13 @@
                     <source type="image/webp"
                       srcset="img/picture/programs/programs-second.webp 1x, img/picture/programs/programs-second2x.webp 2x">
                     <source media="(max-width: 767px)"
-                      srcset="img/picture/programs/programs-second-mobile.jpg 1x, img/picture/programs/programs-second-mobile2x.jpg 2x"
+                      srcset="img/picture/programs/programs-second-mobile.png 1x, img/picture/programs/programs-second-mobile2x.png 2x"
                       width="324" height="420">
                     <source media="(max-width: 1439px)"
-                      srcset="img/picture/programs/programs-second-tablet.jpg 1x, img/picture/programs/programs-second-tablet2x.jpg 2x"
+                      srcset="img/picture/programs/programs-second-tablet.png 1x, img/picture/programs/programs-second-tablet2x.png 2x"
                       width="324" height="420">
-                    <img src="img/picture/programs/programs-second.jpg"
-                      srcset="img/picture/programs/programs-second2x.jpg 2x" loading="lazy" alt="" width="392"
+                    <img src="img/picture/programs/programs-second.png"
+                      srcset="img/picture/programs/programs-second2x.png 2x" loading="lazy" alt="" width="392"
                       height="420">
                   </picture>
                 </div>
@@ -629,20 +627,20 @@
                     <source type="image/webp"
                       srcset="img/picture/programs/programs-third.webp 1x, img/picture/programs/programs-third2x.webp 2x">
                     <source media="(max-width: 767px)"
-                      srcset="img/picture/programs/programs-third-mobile.jpg 1x, img/picture/programs/programs-third-mobile2x.jpg 2x"
+                      srcset="img/picture/programs/programs-third-mobile.png 1x, img/picture/programs/programs-third-mobile2x.png 2x"
                       width="324" height="420">
                     <source media="(max-width: 1439px)"
-                      srcset="img/picture/programs/programs-third-tablet.jpg 1x, img/picture/programs/programs-third-tablet2x.jpg 2x"
+                      srcset="img/picture/programs/programs-third-tablet.png 1x, img/picture/programs/programs-third-tablet2x.png 2x"
                       width="324" height="420">
-                    <img src="img/picture/programs/programs-third.jpg"
-                      srcset="img/picture/programs/programs-third2x.jpg 2x" loading="lazy" alt="" width="392"
+                    <img src="img/picture/programs/programs-third.png"
+                      srcset="img/picture/programs/programs-third2x.png 2x" loading="lazy" alt="" width="392"
                       height="420">
                   </picture>
                 </div>
               </li>
             </ul>
           </div>
-          <div>
+          <div class="programs__wrapper">
             <div class="swiper-pagination" data-swiper-programs-pagination></div>
             <div class="programs__wrapper-slider-button slider-button">
               <button class="programs__slider-button programs__slider-button--prev button swiper-button-prev"
@@ -663,12 +661,13 @@
           </div>
         </div>
       </section>
-      <section class="grant" data-test="grant">
+      <section class="grant" id="grant" data-test="grant">
         <div class="grant__container container">
           <div class="grant__text-content">
             <div class="grant__wrapper">
               <h2>Как поехать</h2>
-              <p>Свяжитесь с координатором, чтобы узнать полную информацию. Вы получите актуальные сведения о доступных
+              <p>Свяжитесь с координатором, чтобы узнать полную информацию.<br> Вы получите актуальные сведения
+                о доступных
                 программах и городах, в которых можете пройти программу.</p>
             </div>
             <div class="grant__wrapper-image">
@@ -717,7 +716,7 @@
           </div>
         </div>
       </section>
-      <!-- <div data-test="news">news</div> -->
+      <!-- <section class="news" id="news" data-test="news"></section> -->
       <section class="faq" data-test="FAQ">
         <div class="faq__container container">
           <h2>Вопросы и ответы</h2>
@@ -786,7 +785,7 @@
               </li>
               <li class="faq__item faq__item--size" data-accordion="element">
                 <div class="faq__wrapper" data-accordion="button">
-                  <h3>Признаётся ли учёба в рамках проекта<br> для дальнейшего&nbsp;обучения?</h3>
+                  <h3>Признаётся ли учёба в рамках проекта<br> для дальнейшего&nbsp;обучения?</h3>
                   <button class="faq__button button" type="button">
                     <span class="faq__button-wrapper faq__button-wrapper--minus">
                       <svg width="20" height="2">
@@ -834,7 +833,7 @@
           </div>
         </div>
       </section>
-      <section class="reviews" data-test="reviews">
+      <section class="reviews" id="reviews" data-test="reviews">
         <div class="reviews__container container">
           <div class="reviews__text-content">
             <h2>Отзывы</h2>
@@ -942,7 +941,7 @@
           </div>
         </div>
       </section>
-      <section class="contacts" data-test="contacts">
+      <section class="contacts" id="contacts" data-test="contacts">
         <div class="contacts__container container">
           <div class="contacts__text-content">
             <h2>Контакты</h2>
@@ -993,22 +992,22 @@
           </a>
           <ul class="main-footer__list">
             <li class="main-footer__item">
-              <a href="#">О проекте</a>
+              <a href="#about">О проекте</a>
             </li>
             <li class="main-footer__item">
-              <a href="#">Программы</a>
+              <a href="#programs">Программы</a>
             </li>
             <li class="main-footer__item">
-              <a href="#">Как поехать</a>
+              <a href="#grant">Как поехать</a>
             </li>
             <li class="main-footer__item">
-              <a href="#">Как поехать</a>
+              <a href="#reviews">Отзывы</a>
             </li>
             <li class="main-footer__item">
-              <a href="#">Новости</a>
+              <a href="#news">Новости</a>
             </li>
             <li class="main-footer__item">
-              <a href="#">Контакты</a>
+              <a href="#contacts">Контакты</a>
             </li>
           </ul>
         </div>
