@@ -1,0 +1,24 @@
+.slider-nav {
+  display: flex;
+  gap: 10px;
+  max-width: 54px;
+}
+
+.slider-nav__button {
+  color: #316DC2;
+  width: 22px;
+  height: 22px;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none
+}
+
+.slider-nav__button--prev svg {
+  transform: rotate(225deg);
+}
+
+.slider-nav__button--next svg {
+  transform: rotate(45deg);
+}

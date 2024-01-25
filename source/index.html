@@ -313,7 +313,7 @@
                   </div>
                   <div class="programs__group">
                     <p>Получите незаменимый опыт работы в крупнейших мировых компаниях.</p>
-                    <button class="programs__button programs__button--small button">
+                    <button class="programs__button button button--small">
                       <div class="programs__button-wrapper button__wrapper">
                         <svg width="10" height="10">
                           <use xlink:href="__spritemap#sprite-icon-arrow"></use>
@@ -642,15 +642,15 @@
           </div>
           <div class="programs__wrapper">
             <div class="swiper-pagination" data-swiper-programs-pagination></div>
-            <div class="programs__wrapper-slider-button slider-button">
-              <button class="programs__slider-button programs__slider-button--prev button swiper-button-prev"
+            <div class="programs__wrapper-slider-button slider-nav slider-button">
+              <button class="programs__slider-button slider-nav__button slider-nav__button--prev swiper-button-prev"
                 type="button" data-programs-swiper-btn-prev>
                 <span class="visually-hidden">Назад</span>
                 <svg width="10" height="10">
                   <use xlink:href="__spritemap#sprite-icon-arrow"></use>
                 </svg>
               </button>
-              <button class="programs__slider-button programs__slider-button--next button swiper-button-next"
+              <button class="programs__slider-button slider-nav__button slider-nav__button--next swiper-button-next"
                 type="button" data-programs-swiper-btn-next>
                 <span class="visually-hidden">Вперед</span>
                 <svg width="10" height="10">
@@ -716,7 +716,85 @@
           </div>
         </div>
       </section>
-      <!-- <section class="news" id="news" data-test="news"></section> -->
+      <section class="news" id="news" data-test="news">
+        <div class="news__container container">
+          <h2>Новости и материалы</h2>
+          <ul class="mews__list">
+            <li class="news__item">
+              <a href="#">общее</a>
+            </li>
+            <li class="news__item">
+              <a href="#">Волонтёрство</a>
+            </li>
+            <li class="news__item">
+              <a href="#">Стажировки</a>
+            </li>
+            <li class="news__item">
+              <a href="#">Карьера</a>
+            </li>
+            <li class="news__item">
+              <a href="#">путешествия</a>
+            </li>
+          </ul>
+          <div class="mews__swiper swiper" data-mews-swiper>
+            <ul class="mews__list swiper-wrapper">
+              <li class="mews__item swiper-slide">
+                <div class="mews__text-content">
+                  <div class="mews__wrapper-design">
+                    <h3>Стажировки</h3>
+                    <img src="img/icon/icon-angle.svg" alt="" width="18" height="18">
+                  </div>
+                  <div class="mews__group">
+                    <p>Получите незаменимый опыт работы в крупнейших мировых компаниях.</p>
+                    <button class="mews__button button button--small">
+                      <div class="mews__button-wrapper button__wrapper">
+                        <svg width="10" height="10">
+                          <use xlink:href="__spritemap#sprite-icon-arrow"></use>
+                        </svg>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+                <div class="mews__wrapper-image">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/picture/mews/mews-first-mobile.webp 1x, img/picture/mews/mews-first-mobile2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1439px)"
+                      srcset="img/picture/mews/mews-first-tablet.webp 1x, img/picture/mews/mews-first-tablet2x.webp 2x">
+                    <source type="image/webp"
+                      srcset="img/picture/mews/mews-first.webp 1x, img/picture/mews/mews-first2x.webp 2x">
+                    <source media="(max-width: 767px)"
+                      srcset="img/picture/mews/mews-first-mobile.png 1x, img/picture/mews/mews-first-mobile2x.png 2x"
+                      width="290" height="330">
+                    <source media="(max-width: 1439px)"
+                      srcset="img/picture/mews/mews-first-tablet.png 1x, img/picture/mews/mews-first-tablet2x.png 2x"
+                      width="324" height="350">
+                    <img src="img/picture/mews/mews-first.png" srcset="img/picture/mews/mews-first2x.png 2x"
+                      loading="lazy" alt="" width="604" height="400">
+                  </picture>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="news__wrapper-slider-button slider-nav slider-button">
+            <button class="news__slider-button slider-nav__button slider-nav__button--prev swiper-button-prev"
+              type="button" data-news-swiper-btn-prev>
+              <span class="visually-hidden">Назад</span>
+              <svg width="10" height="10">
+                <use xlink:href="__spritemap#sprite-icon-arrow"></use>
+              </svg>
+            </button>
+            <div class="swiper-pagination" data-swiper-news-pagination></div>
+            <button class="news__slider-button slider-nav__button slider-nav__button--next swiper-button-next"
+              type="button" data-news-swiper-btn-next>
+              <span class="visually-hidden">Вперед</span>
+              <svg width="10" height="10">
+                <use xlink:href="__spritemap#sprite-icon-arrow"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
       <section class="faq" data-test="FAQ">
         <div class="faq__container container">
           <h2>Вопросы и ответы</h2>
@@ -920,17 +998,17 @@
               </ul>
             </div>
             <div>
-              <div class="swiper-pagination" data-swiper-programs-pagination></div>
-              <div class="reviews__wrapper-slider-button slider-button">
-                <button class="reviews__slider-button button swiper-button-prev" type="button"
-                  data-programs-swiper-btn-prev>
+              <div class="swiper-pagination" data-swiper-reviews-pagination></div>
+              <div class="reviews__wrapper-slider-button slider-nav slider-button">
+                <button class="reviews__slider-button slider-nav__button slider-nav__button--prev swiper-button-prev"
+                  type="button" data-reviews-swiper-btn-prev>
                   <span class="visually-hidden">Назад</span>
                   <svg width="10" height="10">
                     <use xlink:href="__spritemap#sprite-icon-arrow"></use>
                   </svg>
                 </button>
-                <button class="reviews__slider-button button swiper-button-next" type="button"
-                  data-programs-swiper-btn-next>
+                <button class="reviews__slider-button slider-nav__button slider-nav__button--next swiper-button-next"
+                  type="button" data-reviews-swiper-btn-next>
                   <span class="visually-hidden">Вперед</span>
                   <svg width="10" height="10">
                     <use xlink:href="__spritemap#sprite-icon-arrow"></use>

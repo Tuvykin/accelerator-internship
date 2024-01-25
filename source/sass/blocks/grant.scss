@@ -57,6 +57,7 @@
   @include vp-1440 {
     line-height: 20px;
     min-height: 32px;
+    max-width: 498px;
   }
 
   @include vp-768 {
@@ -179,6 +180,7 @@
 
   @include vp-1440 {
     gap: 20px;
+    max-width: 678px;
   }
 
   @include vp-768 {
