@@ -1,3 +1,7 @@
+.main-footer {
+  width: 100%;
+}
+
 .main-footer__container {
   padding: 0 100px 60px;
   display: grid;
@@ -25,6 +29,7 @@
   @include vp-1440 {
     max-width: 678px;
     grid-column: 1 / -1;
+    gap: 98px;
   }
 
   @include vp-768 {
@@ -46,7 +51,8 @@
   flex-wrap: wrap;
 
   @include vp-1440 {
-    min-width: 528px;
+    min-width: 100%;
+    max-width: 528px;
   }
 
   @include vp-768 {

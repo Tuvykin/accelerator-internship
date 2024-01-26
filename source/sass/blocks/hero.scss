@@ -157,22 +157,6 @@
   padding: 0;
 }
 
-.hero__pagination-design {
-  display: flex;
-  align-items: flex-end;
-  order: -1;
-}
-
-.hero__pagination-design img {
-  transform: rotate(270deg);
-  margin-left: -1px;
-
-  @include vp-768 {
-    width: 10px;
-    height: 10px;
-  }
-}
-
 .hero__button-container {
 
   @include vp-768 {
