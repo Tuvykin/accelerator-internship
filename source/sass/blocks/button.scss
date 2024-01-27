@@ -22,6 +22,10 @@
     gap: 16px;
     padding-left: 19px;
     grid-template-columns: 1fr 34px;
+
+    &--small {
+    padding: 0;
+  }
   }
 }
 

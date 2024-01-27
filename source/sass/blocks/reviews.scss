@@ -1,9 +1,12 @@
 .reviews__container {
 
-
-
   @include vp-1440 {
     overflow: hidden;
+    padding-right: 0;
+  }
+
+  @include vp-768 {
+    padding-right: 15px;
   }
 }
 
@@ -12,6 +15,12 @@
   flex-direction: column;
   gap: 40px;
   color: #316DC2;
+
+  @include vp-768 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
 }
 
 .reviews__text-content h2 {
@@ -25,12 +34,23 @@
     font-size: 34px;
     padding: 0;
   }
+
+  @include vp-768 {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 3px 0 2px;
+  }
 }
 
 .reviews__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  max-width: 1240px;
+
+  @include vp-1440 {
+    max-width: 1150px;
+  }
 }
 
 .reviews__item {
@@ -45,8 +65,14 @@
   height: auto;
 
   @include vp-1440 {
-    max-width: 560px;
+    min-width: 560px;
     padding-bottom: 45px;
+  }
+
+  @include vp-768 {
+    padding: 29px 14px;
+    padding-bottom: 25px;
+    min-width: 290px;
   }
 }
 
@@ -54,6 +80,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @include vp-768 {
+    flex-direction: column;
+    gap: 14px;
+    align-items: flex-start;
+  }
 }
 
 .reviews__wrapper-person {
@@ -62,6 +94,11 @@
   gap: 15px;
   align-items: center;
   height: min-content;
+
+  @include vp-768 {
+    gap: 10px;
+    grid-template-columns: 60px 1fr;
+  }
 }
 
 .reviews__wrapper-details {
@@ -71,6 +108,11 @@
   @include vp-1440 {
     min-width: 229px;
   }
+
+  @include vp-768 {
+    gap: 26px;
+    min-width: 200px;
+  }
 }
 
 .reviews__wrapper-program,
@@ -78,6 +120,10 @@
   display: flex;
   flex-direction: column;
   gap: 6px;
+
+  @include vp-768 {
+    gap: 6px;
+  }
 }
 
 .reviews__text-content b {
@@ -88,6 +134,12 @@
 
   @include vp-1440 {
     font-size: 20px;
+  }
+
+  @include vp-768 {
+    font-size: 12px;
+    line-height: 14px;
+    opacity: 0.9;
   }
 }
 
@@ -107,6 +159,11 @@
   @include vp-1440 {
     line-height: 20px;
   }
+
+  @include vp-768 {
+    font-size: 12px;
+    line-height: 14px;
+  }
 }
 
 .reviews__text-content h3 {
@@ -118,6 +175,11 @@
     font-size: 20px;
     line-height: 24px;
   }
+
+  @include vp-768 {
+    font-size: 16px;
+    line-height: 18px;
+  }
 }
 
 .reviews__group {
@@ -128,6 +190,10 @@
   @include vp-1440 {
     gap: 16px;
   }
+
+  @include vp-768 {
+    gap: 15px;
+  }
 }
 
 .reviews__group p {
@@ -137,8 +203,23 @@
   @include vp-1440 {
     line-height: 20px;
   }
+
+  @include vp-768 {
+    font-size: 14px;
+  }
 }
 
 .reviews__wrapper-image img {
   border-radius: 90px;
+}
+
+.reviews__swiper {
+
+  @include vp-1440 {
+    margin: 0;
+  }
+
+  @include vp-768 {
+    grid-column: 1 / -1;
+  }
 }

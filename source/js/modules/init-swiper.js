@@ -1,5 +1,5 @@
 import Swiper from 'swiper';
-import {Pagination, Navigation, Autoplay} from 'swiper/modules';
+import {Pagination, Navigation, Autoplay, Scrollbar} from 'swiper/modules';
 
 export const initHeroSlider = () => {
   const swiperWrapper = new Swiper('[data-hero-swiper]', {
@@ -25,16 +25,12 @@ export const initHeroSlider = () => {
       }
     },
     breakpoints: {
-      // when window width is >= 320px
       320: {
         allowTouchMove: true,
       },
-      // when window width is >= 768px
       768: {
-
         allowTouchMove: true,
       },
-      // when window width is >= 1440px
       1440: {
         allowTouchMove: false,
       },
@@ -48,34 +44,38 @@ export const initProgramsSlider = () => {
   const buttonPrev = document.querySelector('[data-programs-swiper-btn-prev]');
 
   return new Swiper(swiperWrapper, {
-    modules: [Navigation, Pagination],
+    modules: [Navigation, Scrollbar],
     loop: false,
+    scrollbar: {
+      el: '[data-swiper-programs-scrollbar]',
+      draggable: true,
+    },
     breakpoints: {
-      // when window width is >= 320px
       320: {
         slidesPerView: 1,
         initialSlide: 0,
+        allowTouchMove: true,
       },
-      // when window width is >= 768px
       768: {
         slidesPerView: 2,
         spaceBetween: 30,
-        initialSlide: 0.5,
+        allowTouchMove: true,
+        scrollbar: {
+          dragSize: 324,
+        },
       },
-      // when window width is >= 1440px
       1440: {
         slidesPerView: 3,
         spaceBetween: 32,
-        initialSlide: 3,
+        allowTouchMove: false,
+        scrollbar: {
+          dragSize: 392,
+        },
       },
     },
     navigation: {
       nextEl: buttonNext,
       prevEl: buttonPrev,
-    },
-    pagination: {
-      el: '[data-swiper-programs-pagination]',
-      clickable: true,
     },
   });
 };
@@ -86,24 +86,32 @@ export const initReviewsSlider = () => {
   const buttonPrev = document.querySelector('[data-reviews-swiper-btn-prev]');
 
   return new Swiper(swiperWrapper, {
-    loop: true,
+    modules: [Navigation, Scrollbar],
+    loop: false,
+    scrollbar: {
+      el: '[data-swiper-reviews-scrollbar]',
+      draggable: true,
+    },
     breakpoints: {
-      // when window width is >= 320px
       320: {
         slidesPerView: 1,
         initialSlide: 0,
       },
-      // when window width is >= 768px
       768: {
         slidesPerView: 1.5,
         spaceBetween: 30,
         initialSlide: 0,
+        scrollbar: {
+          dragSize: 324,
+        },
       },
-      // when window width is >= 1440px
       1440: {
         slidesPerView: 2,
         spaceBetween: 32,
         initialSlide: 0,
+        scrollbar: {
+          dragSize: 392,
+        },
       },
     },
     navigation: {
