@@ -1,6 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import './utils/scroll-lock';
-import {initHeroSlider, initProgramsSlider, initReviewsSlider} from './modules/init-swiper';
+import {initHeroSlider, initProgramsSlider, initReviewsSlider, initNewsSlider} from './modules/init-swiper';
+import './vendor/tabs';
 import './vendor/accordion';
 
 // ---------------------------------
@@ -17,6 +18,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   initHeroSlider();
   initProgramsSlider();
+  initNewsSlider();
   initReviewsSlider();
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'

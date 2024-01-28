@@ -3,6 +3,8 @@
 
 //  accordions
 @import "vendor/data-accordion";
+// tabs
+@import "vendor/data-tabs";
 
 // Swiper
 @import 'swiper/css';
@@ -28,11 +30,11 @@
 @import "blocks/hero";
 @import "blocks/hero-pagination";
 @import "blocks/about";
-@import "blocks/card";
 @import "blocks/programs";
 @import "blocks/menu";
 @import "blocks/grant";
 @import "blocks/news";
+@import "blocks/news-cards";
 @import "blocks/faq";
 @import "blocks/reviews";
 @import "blocks/contacts";

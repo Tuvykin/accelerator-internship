@@ -80,6 +80,44 @@ export const initProgramsSlider = () => {
   });
 };
 
+export const initNewsSlider = () => {
+  const swiperWrapper = document.querySelector('[data-news-swiper]');
+  const buttonNext = document.querySelector('[data-news-swiper-btn-next]');
+  const buttonPrev = document.querySelector('[data-news-swiper-btn-prev]');
+
+  return new Swiper(swiperWrapper, {
+    modules: [Navigation, Pagination],
+    loop: false,
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        initialSlide: 0,
+      },
+      768: {
+        slidesPerView: 1.5,
+        spaceBetween: 30,
+        slidesPerGroup: 1,
+      },
+      1440: {
+        slidesPerView: 'auto',
+        spaceBetween: 32,
+        slidesPerGroup: 2,
+      },
+    },
+    navigation: {
+      nextEl: buttonNext,
+      prevEl: buttonPrev,
+    },
+    pagination: {
+      el: '[data-swiper-news-pagination]',
+      clickable: true,
+      renderBullet: function (i, className) {
+        return `<span class="${ className }">${ i + 1 }</span>`;
+      },
+    },
+  });
+};
+
 export const initReviewsSlider = () => {
   const swiperWrapper = document.querySelector('[data-reviews-swiper]');
   const buttonNext = document.querySelector('[data-reviews-swiper-btn-next]');

@@ -104,10 +104,9 @@
 }
 
 .programs__item {
-  position: relative;
-  min-height: 420px;
   display: flex;
   align-items: flex-end;
+  min-height: 420px;
   border-radius: 12px;
   max-width: 392px;
   width: 100%;
@@ -158,6 +157,11 @@
   border-radius: 0px 12px 12px 12px;
   padding: 11px 18px 14px;
   min-height: 79px;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  background-color: $color-default-white;
+  margin-top: -1px;
 
   @include vp-1440 {
     padding: 8px 18px 10px;
@@ -169,7 +173,13 @@
   }
 }
 
-.programs__wrapper-design img {
+.programs__wrapper {
+  display: flex;
+  align-items: flex-end;
+  color: $color-default-white;
+}
+
+.programs__text-content svg {
   margin-left: -1px;
   transform: rotate(270deg);
 }

@@ -306,12 +306,14 @@
           <div class="programs__swiper swiper" data-programs-swiper>
             <ul class="programs__list swiper-wrapper">
               <li class="programs__item swiper-slide">
-                <div class="programs__text-content card">
-                  <div class="card__wrapper">
+                <div class="programs__text-content">
+                  <div class="programs__wrapper">
                     <h3>Стажировки</h3>
-                    <img src="img/icon/icon-angle.svg" alt="" width="18" height="18">
+                    <svg width="18" height="18">
+                      <use xlink:href="__spritemap#sprite-icon-angle"></use>
+                    </svg>
                   </div>
-                  <div class="programs__group card__group">
+                  <div class="programs__group">
                     <p>Получите незаменимый опыт работы в крупнейших мировых компаниях.</p>
                     <button class="button button--small">
                       <div class="button__wrapper button__wrapper--small">
@@ -343,12 +345,14 @@
                 </div>
               </li>
               <li class="programs__item swiper-slide">
-                <div class="programs__text-content card">
-                  <div class="card__wrapper">
+                <div class="programs__text-content">
+                  <div class="programs__wrapper">
                     <h3>Волонтёрство</h3>
-                    <img src="img/icon/icon-angle.svg" alt="" width="18" height="18">
+                    <svg width="18" height="18">
+                      <use xlink:href="__spritemap#sprite-icon-angle"></use>
+                    </svg>
                   </div>
-                  <div class="programs__group card__group">
+                  <div class="programs__group">
                     <p>Помогайте другим и развивайте свои лидерские качества.</p>
                     <button class="button button--small">
                       <div class="button__wrapper button__wrapper--small">
@@ -380,12 +384,14 @@
                 </div>
               </li>
               <li class="programs__item swiper-slide">
-                <div class="programs__text-content card">
-                  <div class="card__wrapper">
+                <div class="programs__text-content">
+                  <div class="programs__wrapper">
                     <h3>Учёба</h3>
-                    <img src="img/icon/icon-angle.svg" alt="" width="18" height="18">
+                    <svg width="18" height="18">
+                      <use xlink:href="__spritemap#sprite-icon-angle"></use>
+                    </svg>
                   </div>
-                  <div class="programs__group card__group">
+                  <div class="programs__group">
                     <p>Получите образование и измените своё будущее.</p>
                     <button class="button button--small">
                       <div class="button__wrapper button__wrapper--small">
@@ -417,12 +423,14 @@
                 </div>
               </li>
               <li class="programs__item swiper-slide">
-                <div class="programs__text-content card">
-                  <div class="card__wrapper">
+                <div class="programs__text-content">
+                  <div class="programs__wrapper">
                     <h3>Стажировки</h3>
-                    <img src="img/icon/icon-angle.svg" alt="" width="18" height="18">
+                    <svg width="18" height="18">
+                      <use xlink:href="__spritemap#sprite-icon-angle"></use>
+                    </svg>
                   </div>
-                  <div class="programs__group card__group">
+                  <div class="programs__group">
                     <p>Получите незаменимый опыт работы в крупнейших мировых компаниях.</p>
                     <button class="button button--small">
                       <div class="button__wrapper  button__wrapper--small">
@@ -454,12 +462,14 @@
                 </div>
               </li>
               <li class="programs__item swiper-slide">
-                <div class="programs__text-content card">
-                  <div class="card__wrapper">
+                <div class="programs__text-content">
+                  <div class="programs__wrapper">
                     <h3>Волонтёрство</h3>
-                    <img src="img/icon/icon-angle.svg" alt="" width="18" height="18">
+                    <svg width="18" height="18">
+                      <use xlink:href="__spritemap#sprite-icon-angle"></use>
+                    </svg>
                   </div>
-                  <div class="programs__group card__group">
+                  <div class="programs__group">
                     <p>Помогайте другим и развивайте свои лидерские качества.</p>
                     <button class="button button--small">
                       <div class="button__wrapper  button__wrapper--small">
@@ -491,12 +501,14 @@
                 </div>
               </li>
               <li class="programs__item swiper-slide">
-                <div class="programs__text-content card">
-                  <div class="card__wrapper">
+                <div class="programs__text-content">
+                  <div class="programs__wrapper">
                     <h3>Учёба</h3>
-                    <img src="img/icon/icon-angle.svg" alt="" width="18" height="18">
+                    <svg width="18" height="18">
+                      <use xlink:href="__spritemap#sprite-icon-angle"></use>
+                    </svg>
                   </div>
-                  <div class="programs__group card__group">
+                  <div class="programs__group">
                     <p>Получите образование и измените своё будущее.</p>
                     <button class="button button--small">
                       <div class="button__wrapper  button__wrapper--small">
@@ -529,7 +541,7 @@
               </li>
             </ul>
           </div>
-          <div class="programs__wrapper slider">
+          <div class="slider">
             <div class="swiper-scrollbar" data-swiper-programs-scrollbar></div>
             <div class="slider-nav slider-button">
               <button class="slider-nav__button slider-nav__button--prev swiper-button-prev" type="button"
@@ -610,37 +622,44 @@
           <h2>Новости и материалы</h2>
           <ul class="news__list">
             <li class="news__item">
-              <a href="#">общее</a>
+              <button class="news__button news__button--current" type="button">общее</button>
             </li>
             <li class="news__item">
-              <a href="#">Волонтёрство</a>
+              <button class="news__button" type="button">Волонтёрство</button>
             </li>
             <li class="news__item">
-              <a href="#">Стажировки</a>
+              <button class="news__button" type="button">Стажировки</button>
             </li>
             <li class="news__item">
-              <a href="#">Карьера</a>
+              <button class="news__button" type="button">Карьера</button>
             </li>
             <li class="news__item">
-              <a href="#">путешествия</a>
+              <button class="news__button" type="button">путешествия</button>
             </li>
           </ul>
-          <div class="news__swiper swiper" data-mews-swiper>
-            <ul class="news__list-card swiper-wrapper">
-              <li class="news__item-card swiper-slide">
-                <div class="news__text-content card">
-                  <div class="news__wrapper-date">
+          <div class="news__swiper swiper" data-news-swiper>
+            <ul class="news__list-cards news-cards swiper-wrapper">
+              <li class="news-cards__item swiper-slide">
+                <div class="news-cards__text-content">
+                  <svg width="16" height="16">
+                    <use xlink:href="__spritemap#sprite-icon-angle"></use>
+                  </svg>
+                  <div class="news-cards__wrapper">
                     <span>23/03/2023</span>
-                    <img src="img/icon/icon-angle.svg" alt="" width="18" height="18">
+                    <svg width="16" height="16">
+                      <use xlink:href="__spritemap#sprite-icon-angle"></use>
+                    </svg>
                   </div>
-                  <div class="news__wrapper-design card__wrapper">
+                  <div class="news-cards__wrapper">
                     <h3>Интервью с участницей программы стажировки</h3>
-                    <img src="img/icon/icon-angle.svg" alt="" width="18" height="18">
+                    <svg width="16" height="16">
+                      <use xlink:href="__spritemap#sprite-icon-angle"></use>
+                    </svg>
                   </div>
-                  <div class="news__group card__group">
+                  <div class="news-cards__group">
                     <p>Саша рассказывает, как попала в программу и как прошла 6-месячная стажировка в ISOFound</p>
                     <button class="button button--small">
-                      <div class="button__wrapper">
+                      <div class="button__wrapper button__wrapper--small">
                         <svg width="10" height="10">
                           <use xlink:href="__spritemap#sprite-icon-arrow"></use>
                         </svg>
@@ -648,22 +667,163 @@
                     </button>
                   </div>
                 </div>
-                <div class="news__wrapper-image">
+                <div class="news-cards__wrapper-image">
                   <picture>
                     <source type="image/webp" media="(max-width: 767px)"
-                      srcset="img/picture/mews/mews-first-mobile.webp 1x, img/picture/mews/mews-first-mobile2x.webp 2x">
+                      srcset="img/picture/news/news-interview-mobile.webp 1x, img/picture/news/news-interview-mobile2x.webp 2x">
                     <source type="image/webp" media="(max-width: 1439px)"
-                      srcset="img/picture/mews/mews-first-tablet.webp 1x, img/picture/mews/mews-first-tablet2x.webp 2x">
+                      srcset="img/picture/news/news-interview-tablet.webp 1x, img/picture/mews/mews-interview-tablet2x.webp 2x">
                     <source type="image/webp"
-                      srcset="img/picture/mews/mews-first.webp 1x, img/picture/mews/mews-first2x.webp 2x">
+                      srcset="img/picture/news/news-interview.webp 1x, img/picture/news/news-interview2x.webp 2x">
                     <source media="(max-width: 767px)"
-                      srcset="img/picture/mews/mews-first-mobile.jpg 1x, img/picture/mews/mews-first-mobile2x.jpg 2x"
+                      srcset="img/picture/news/news-interview-mobile.jpg 1x, img/picture/news/news-interview-mobile2x.jpg 2x"
                       width="290" height="330">
                     <source media="(max-width: 1439px)"
-                      srcset="img/picture/mews/mews-first-tablet.jpg 1x, img/picture/mews/mews-first-tablet2x.jpg 2x"
+                      srcset="img/picture/news/news-interview-tablet.jpg 1x, img/picture/news/news-interview-tablet2x.jpg 2x"
                       width="324" height="350">
-                    <img src="img/picture/mews/mews-first.jpg" srcset="img/picture/mews/mews-first2x.jpg 2x"
+                    <img src="img/picture/news/news-interview.jpg" srcset="img/picture/news/news-interview2x.jpg 2x"
                       loading="lazy" alt="" width="604" height="400">
+                  </picture>
+                </div>
+              </li>
+              <li class="news-cards__item news-cards__item--primary swiper-slide">
+                <div class="news-cards__text-content news-cards__text-content--primary">
+                  <svg width="16" height="16">
+                    <use xlink:href="__spritemap#sprite-icon-angle"></use>
+                  </svg>
+                  <div class="news-cards__wrapper">
+                    <span>20/03/2023</span>
+                    <svg width="16" height="16">
+                      <use xlink:href="__spritemap#sprite-icon-angle"></use>
+                    </svg>
+                  </div>
+                  <div class="news-cards__wrapper">
+                    <h3>Путешествуем<br> по миру</h3>
+                    <svg width="16" height="16">
+                      <use xlink:href="__spritemap#sprite-icon-angle"></use>
+                    </svg>
+                  </div>
+                  <div class="news-cards__group">
+                    <p>Какие места посещают<br> наши студенты весной</p>
+                    <button class="button button--small">
+                      <div class="button__wrapper button__wrapper--small">
+                        <svg width="10" height="10">
+                          <use xlink:href="__spritemap#sprite-icon-arrow"></use>
+                        </svg>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+                <div class="news-cards__wrapper-image">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/picture/news/news-travel-mobile.webp 1x, img/picture/news/news-travel-mobile2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1439px)"
+                      srcset="img/picture/news/news-travel-tablet.webp 1x, img/picture/mews/mews-travel-tablet2x.webp 2x">
+                    <source type="image/webp"
+                      srcset="img/picture/news/news-travel.webp 1x, img/picture/news/news-travel2x.webp 2x">
+                    <source media="(max-width: 767px)"
+                      srcset="img/picture/news/news-travel-mobile.jpg 1x, img/picture/news/news-travel-mobile2x.jpg 2x"
+                      width="290" height="330">
+                    <source media="(max-width: 1439px)"
+                      srcset="img/picture/news/news-travel-tablet.jpg 1x, img/picture/news/news-travel-tablet2x.jpg 2x"
+                      width="324" height="350">
+                    <img src="img/picture/news/news-travel.jpg" srcset="img/picture/news/news-travel2x.jpg 2x"
+                      loading="lazy" alt="" width="286" height="400">
+                  </picture>
+                </div>
+              </li>
+              <li class="news-cards__item news-cards__item--primary swiper-slide">
+                <div class="news-cards__text-content news-cards__text-content--primary">
+                  <svg width="16" height="16">
+                    <use xlink:href="__spritemap#sprite-icon-angle"></use>
+                  </svg>
+                  <div class="news-cards__wrapper">
+                    <span>17/03/2023</span>
+                    <svg width="16" height="16">
+                      <use xlink:href="__spritemap#sprite-icon-angle"></use>
+                    </svg>
+                  </div>
+                  <div class="news-cards__wrapper">
+                    <h3>Новая программа волонтёрства</h3>
+                    <svg width="16" height="16">
+                      <use xlink:href="__spritemap#sprite-icon-angle"></use>
+                    </svg>
+                  </div>
+                  <div class="news-cards__group">
+                    <p>Программа помощи детям длительностью 4 месяца</p>
+                    <button class="button button--small">
+                      <div class="button__wrapper button__wrapper--small">
+                        <svg width="10" height="10">
+                          <use xlink:href="__spritemap#sprite-icon-arrow"></use>
+                        </svg>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+                <div class="news-cards__wrapper-image">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/picture/news/news-volunteer-mobile.webp 1x, img/picture/news/news-volunteer-mobile2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1439px)"
+                      srcset="img/picture/news/news-volunteer-tablet.webp 1x, img/picture/mews/mews-volunteer-tablet2x.webp 2x">
+                    <source type="image/webp"
+                      srcset="img/picture/news/news-volunteer.webp 1x, img/picture/news/news-volunteer2x.webp 2x">
+                    <source media="(max-width: 767px)"
+                      srcset="img/picture/news/news-volunteer-mobile.jpg 1x, img/picture/news/news-volunteer-mobile2x.jpg 2x"
+                      width="290" height="330">
+                    <source media="(max-width: 1439px)"
+                      srcset="img/picture/news/news-volunteer-tablet.jpg 1x, img/picture/news/news-volunteer-tablet2x.jpg 2x"
+                      width="324" height="350">
+                    <img src="img/picture/news/news-volunteer.jpg" srcset="img/picture/news/news-volunteer2x.jpg 2x"
+                      loading="lazy" alt="" width="286" height="400">
+                  </picture>
+                </div>
+              </li>
+              <li class="news-cards__item news-cards__item--primary swiper-slide">
+                <div class="news-cards__text-content news-cards__text-content--primary">
+                  <svg width="16" height="16">
+                    <use xlink:href="__spritemap#sprite-icon-angle"></use>
+                  </svg>
+                  <div class="news-cards__wrapper">
+                    <span>10/03/2023</span>
+                    <svg width="16" height="16">
+                      <use xlink:href="__spritemap#sprite-icon-angle"></use>
+                    </svg>
+                  </div>
+                  <div class="news-cards__wrapper">
+                    <h3>Построй свою карьеру</h3>
+                    <svg width="16" height="16">
+                      <use xlink:href="__spritemap#sprite-icon-angle"></use>
+                    </svg>
+                  </div>
+                  <div class="news-cards__group">
+                    <p>Ведущие компании готовы трудоустроить выпускников стажировки</p>
+                    <button class="button button--small">
+                      <div class="button__wrapper button__wrapper--small">
+                        <svg width="10" height="10">
+                          <use xlink:href="__spritemap#sprite-icon-arrow"></use>
+                        </svg>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+                <div class="news-cards__wrapper-image">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/picture/news/news-volunteer-mobile.webp 1x, img/picture/news/news-volunteer-mobile2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1439px)"
+                      srcset="img/picture/news/news-volunteer-tablet.webp 1x, img/picture/mews/mews-volunteer-tablet2x.webp 2x">
+                    <source type="image/webp"
+                      srcset="img/picture/news/news-volunteer.webp 1x, img/picture/news/news-volunteer2x.webp 2x">
+                    <source media="(max-width: 767px)"
+                      srcset="img/picture/news/news-volunteer-mobile.jpg 1x, img/picture/news/news-volunteer-mobile2x.jpg 2x"
+                      width="290" height="330">
+                    <source media="(max-width: 1439px)"
+                      srcset="img/picture/news/news-volunteer-tablet.jpg 1x, img/picture/news/news-volunteer-tablet2x.jpg 2x"
+                      width="324" height="350">
+                    <img src="img/picture/news/news-volunteer.jpg" srcset="img/picture/news/news-volunteer2x.jpg 2x"
+                      loading="lazy" alt="" width="286" height="400">
                   </picture>
                 </div>
               </li>
