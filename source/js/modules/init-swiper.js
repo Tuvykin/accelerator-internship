@@ -1,5 +1,5 @@
 import Swiper from 'swiper';
-import {Pagination, Navigation, Autoplay, Scrollbar} from 'swiper/modules';
+import {Pagination, Navigation, Autoplay, Scrollbar, Grid} from 'swiper/modules';
 
 export const initHeroSlider = () => {
   const swiperWrapper = new Swiper('[data-hero-swiper]', {
@@ -86,7 +86,7 @@ export const initNewsSlider = () => {
   const buttonPrev = document.querySelector('[data-news-swiper-btn-prev]');
 
   return new Swiper(swiperWrapper, {
-    modules: [Navigation, Pagination],
+    modules: [Navigation, Pagination, Grid],
     loop: false,
     breakpoints: {
       320: {
@@ -94,14 +94,15 @@ export const initNewsSlider = () => {
         initialSlide: 0,
       },
       768: {
-        slidesPerView: 1.5,
+        slidesPerView: 2,
         spaceBetween: 30,
-        slidesPerGroup: 1,
+        grid: {
+          rows: 2,
+        }
       },
       1440: {
         slidesPerView: 'auto',
         spaceBetween: 32,
-        slidesPerGroup: 2,
       },
     },
     navigation: {

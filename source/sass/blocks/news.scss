@@ -3,6 +3,10 @@
   flex-direction: column;
   gap: 40px;
   align-items: center;
+
+  @include vp-1440 {
+    gap: 30px;
+  }
 }
 
 .news__container h2 {
@@ -11,6 +15,12 @@
   font-size: 50px;
   font-weight: 400;
   line-height: 50px;
+  padding: 5px;
+
+  @include vp-1440 {
+    font-size: 34px;
+    padding: 0;
+  }
 }
 
 .news__list {
@@ -18,9 +28,12 @@
   padding: 0;
   list-style-type: none;
   display: flex;
-  gap: 30px;
   min-width: 810px;
   justify-content: space-between;
+
+  @include vp-1440 {
+    min-width: 670px;
+  }
 }
 
 .news__button {
@@ -36,6 +49,14 @@
     border-radius: 20px;
     border: 1px solid #316DC2;
     padding: 11px 24px;
+  }
+
+  @include vp-1440 {
+    padding: 12px 19px;
+
+    &--current {
+      padding: 11px 18px;
+    }
   }
 }
 
@@ -71,4 +92,12 @@
   background-color: #316DC2;
   color: $color-default-white;
   opacity: 1;
+}
+
+.news__swiper {
+
+  @include vp-1440 {
+    height: 730px;
+    width: 678px;
+  }
 }
