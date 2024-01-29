@@ -4,9 +4,10 @@
   order: -1;
 }
 
-.hero__pagination img {
+.hero__pagination svg {
   transform: rotate(270deg);
   margin-left: -1px;
+  color: $color-default-white;
 
   @include vp-768 {
     width: 10px;

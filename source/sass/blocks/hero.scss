@@ -85,8 +85,9 @@
   margin-top: -1px;
 }
 
-.hero__group-design img {
+.hero__group-design svg {
   margin-left: -1px;
+  color: $color-default-white;
 
   @include vp-768 {
     width: 10px;
@@ -169,7 +170,7 @@
   }
 }
 
-.hero__button-container img {
+.hero__button-container svg {
   display: none;
 
   @include vp-768 {
@@ -177,6 +178,14 @@
     position: absolute;
     top: 0;
     right: -9px;
+  }
+}
+
+.hero__button svg {
+  display: block;
+
+  @include vp-768 {
+    position: static;
   }
 }
 
