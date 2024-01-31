@@ -62,5 +62,10 @@
   @include vp-768 {
     width: 34px;
     height: 34px;
+
+    &--small {
+      width: 30px;
+      height: 30px;
+    }
   }
 }
