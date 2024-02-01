@@ -2,7 +2,7 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import './utils/scroll-lock';
 import {initHeroSlider, initProgramsSlider, initReviewsSlider, initNewsSlider} from './modules/init-swiper';
 import './vendor/accordion';
-import { CustomSelect } from './select/custom-select';
+import { CustomSelect } from './modules/select/custom-select';
 
 // ---------------------------------
 
@@ -27,5 +27,7 @@ window.addEventListener('DOMContentLoaded', () => {
     // const form = new Form();
     // window.form = form;
     // form.init();
+    const select = new CustomSelect();
+    select.init();
   });
 });

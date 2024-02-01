@@ -17,7 +17,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border: none
+  border: none;
+  cursor: pointer;
 }
 
 .slider-nav__button--prev svg {

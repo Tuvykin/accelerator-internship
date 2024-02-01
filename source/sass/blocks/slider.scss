@@ -21,6 +21,7 @@
   height: 2px;
   background-color: rgba(49,109,194,0.2);
   position: relative;
+  cursor: pointer;
 
   &::after {
     content: '';

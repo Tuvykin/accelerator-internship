@@ -309,7 +309,7 @@
       <section class="programs" id="programs" data-test="programs">
         <div class="programs__container container">
           <h2>Программы</h2>
-          <button class="programs__button button">
+          <button class="programs__button button" type="button">
             <span class="button__description">все программы</span>
             <div class="button__wrapper">
               <svg width="10" height="10">
@@ -1518,7 +1518,7 @@
                 <li class="form__item">
                   <div class="custom-select form__select" data-select="data-select" data-validate-type="select"
                     data-name="city" data-message-base="Поле обязательно к заполнению">
-                    <span>Выберите город</span>
+                    <span class="form__select-label">Выберите город</span>
                     <button class="custom-select__button form__select-button" type="button"
                       aria-label="Выберите один вариант из списка">
                       <span class="custom-select__text"></span>
@@ -1541,18 +1541,28 @@
                   </div>
                 </li>
                 <li class="form__item">
-                  <div class="custom-toggle custom-toggle--checkbox form__custom-toggle" data-validate-type="checkbox"
+                  <div class="form__toggle" data-validate-type="checkbox"
                     data-message-base="Поле обязательно к заполнению">
                     <label>
-                      <input type="checkbox" value="Принято" name="Пользовательское соглашение">
-                      <span class="custom-toggle__icon form__custom-toggle-icon" tabindex="0"></span>
-                      <span class="custom-toggle__label form__toggle-label">Я согласен на обработку моих персональных
-                        данных</span>
+                      <input type="checkbox" value="Принято" name="Terms of use">
+                      <span class="checkbox-view">
+                        <svg width="10" height="10">
+                          <use xlink:href="__spritemap#sprite-icon-check"></use>
+                        </svg>
+                      </span>
+                      Я согласен на обработку моих персональных данных
                     </label>
                   </div>
                 </li>
               </ul>
-              <button class="form__button" type="submit">Отправить</button>
+              <button class="form__button button" type="submit">
+                <span class="form__button-description button__description">Отправить</span>
+                <div class="form__button-wrapper button__wrapper">
+                  <svg width="10" height="10">
+                    <use xlink:href="__spritemap#sprite-icon-arrow"></use>
+                  </svg>
+                </div>
+              </button>
             </form>
           </div>
           <div class="form__wrapper-image">

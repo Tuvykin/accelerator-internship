@@ -134,6 +134,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 
   @include vp-768 {
     width: 26px;
