@@ -40,44 +40,65 @@
                 </svg>
               </span>
             </button>
-            <ul class="navigation__list" data-navigation-list>
+            <ul class="navigation__list" data-navigation-list data-accordion="parent">
               <li class="navigation__item">
-                <a href="#">О проекте</a>
+                <a href="#about" data-menu-link>О проекте</a>
               </li>
-              <li class="navigation__item">
-                <a href="#">Программы</a>
-                <svg width="12" height="12">
-                  <use xlink:href="__spritemap#sprite-icon-arrow-menu"></use>
-                </svg>
-                <ul class="navigation__menu-list">
+              <li class="navigation__item" data-accordion="element">
+                <a href="#" data-accordion="button">
+                  <span>Программы</span>
+                  <svg width="12" height="12">
+                    <use xlink:href="__spritemap#sprite-icon-arrow-menu"></use>
+                  </svg>
+                </a>
+                <ul class="navigation__menu-list" data-accordion="content">
                   <li class="navigation__menu-item">
-                    <a href="#">Стажировки</a>
+                    <a href="#programs" data-menu-link>Стажировки</a>
                   </li>
                   <li class="navigation__menu-item">
-                    <a href="#">Волонтёрство</a>
+                    <a href="#programs" data-menu-link>Волонтёрство</a>
                   </li>
                   <li class="navigation__menu-item">
-                    <a href="#">Учёба</a>
+                    <a href="#programs" data-menu-link>Учёба</a>
                   </li>
                   <li class="navigation__menu-item">
-                    <a href="#">Религия</a>
+                    <a href="#programs" data-menu-link>Религия</a>
                   </li>
                 </ul>
               </li>
               <li class="navigation__item">
-                <a href="#">как поехать</a>
+                <a href="#grant" data-menu-link>как поехать</a>
               </li>
               <li class="navigation__item">
-                <a href="#">отзывы</a>
+                <a href="#reviews" data-menu-link>отзывы</a>
+              </li>
+              <li class="navigation__item" data-accordion="element">
+                <a href="#" data-accordion="button">
+                  <span>новости</span>
+                  <svg width="12" height="12">
+                    <use xlink:href="__spritemap#sprite-icon-arrow-menu"></use>
+                  </svg>
+                </a>
+                <ul class="navigation__menu-list" data-accordion="content">
+                  <li class="navigation__menu-item">
+                    <a href="#news" data-menu-link>Общее</a>
+                  </li>
+                  <li class="navigation__menu-item">
+                    <a href="#news" data-menu-link>Волонтерство</a>
+                  </li>
+                  <li class="navigation__menu-item">
+                    <a href="#news" data-menu-link>Стажировки</a>
+                  </li>
+                  <li class="navigation__menu-item">
+                    <a href="#news" data-menu-link>Карьера</a>
+                  </li>
+                  <li class="navigation__menu-item">
+                    <a href="#news" data-menu-link>Путешествия</a>
+                  </li>
+                </ul>
               </li>
               <li class="navigation__item">
-                <a href="#">новости</a>
-                <svg width="12" height="12">
-                  <use xlink:href="__spritemap#sprite-icon-arrow-menu"></use>
-                </svg>
-              </li>
-              <li class="navigation__item">
-                <a href="#">контакты</a>
+                <a href="#contacts" data-menu-link>контакты</a>
               </li>
             </ul>
           </div>

@@ -6,6 +6,7 @@ const nav = document.querySelector('[data-navigation]');
 const navList = document.querySelector('[data-navigation-list]');
 
 const isEscapeKey = (evt) => evt.key === 'Escape';
+const isActive = navList.classList.contains('navigation__list--is-active');
 
 burgerButton.addEventListener('click', onBurgerButtonClick);
 
@@ -16,6 +17,18 @@ const onDocumentKeydown = (evt) => {
   }
 };
 
+const menuLinks = document.querySelectorAll('[data-menu-link]');
+
+if (menuLinks.length > 0) {
+  menuLinks.forEach((menuLink) => {
+    menuLink.addEventListener('click', onMenuLinkClick);
+  });
+}
+
+function onMenuLinkClick() {
+  closeMenu();
+}
+
 function onBurgerButtonClick() {
   burgerButton.classList.toggle('navigation__button--is-active');
   nav.classList.toggle('navigation--is-active');
@@ -25,14 +38,14 @@ function onBurgerButtonClick() {
   document.addEventListener('click', documentClick);
   document.addEventListener('keydown', onDocumentKeydown);
 
-  window.focusLock.lock('[data-navigation-wrapper]', false);
-  window.scrollLock.disableScrolling();
+  if(isActive) {
+    window.focusLock.lock('[data-navigation-wrapper]', false);
+    window.scrollLock.disableScrolling();
+  }
 }
 
 function documentClick(evt) {
-  const isOpen = navList.classList.contains('navigation__list--is-active');
-
-  if (isOpen && !navList.contains(evt.target) && !burgerButton.contains(evt.target)) {
+  if (!isActive && !navList.contains(evt.target) && !burgerButton.contains(evt.target)) {
     closeMenu();
   }
 }

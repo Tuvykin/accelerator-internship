@@ -77,11 +77,13 @@
   text-transform: uppercase;
   padding: 12px 25px;
   border: none;
+  opacity: 0.6;
 
   &--current {
     border-radius: 20px;
     border: 1px solid #316DC2;
     padding: 11px 24px;
+    opacity: 1;
   }
 
   @include vp-1440 {
