@@ -22,20 +22,25 @@
   <div class="wrapper">
     <header class="main-header" data-test="slider">
       <div class="main-header__container container">
-        <nav class="navigation">
-          <a class="navigation__logo" href="#" aria-current="page">
+        <nav class="navigation" data-navigation>
+          <a class="navigation__logo" aria-current="page">
             <img src="img/icon/icon-logo.svg" alt="Логотип" width="52" height="52">
           </a>
           <div class="navigation__wrapper">
-            <button class="navigation__button button">
+            <button class="navigation__button button" data-burger-button>
               <span class="navigation__button-description button__description">меню</span>
-              <div class="navigation__button-wrapper button__wrapper">
+              <span class="navigation__button-wrapper navigation__button-wrapper--close button__wrapper">
                 <svg width="20" height="20">
-                  <use xlink:href="__spritemap#sprite-icon-menu"></use>
+                  <use xlink:href="__spritemap#sprite-icon-menu-open"></use>
                 </svg>
-              </div>
+              </span>
+              <span class="navigation__button-wrapper navigation__button-wrapper--open button__wrapper">
+                <svg width="20" height="20">
+                  <use xlink:href="__spritemap#sprite-icon-menu-close"></use>
+                </svg>
+              </span>
             </button>
-            <ul class="navigation__list">
+            <ul class="navigation__list" data-navigation-list>
               <li class="navigation__item">
                 <a href="#">О проекте</a>
               </li>
@@ -44,17 +49,17 @@
                 <svg width="12" height="12">
                   <use xlink:href="__spritemap#sprite-icon-arrow-menu"></use>
                 </svg>
-                <ul class="navigation__menu-list menu">
-                  <li class="menu__item">
+                <ul class="navigation__menu-list">
+                  <li class="navigation__menu-item">
                     <a href="#">Стажировки</a>
                   </li>
-                  <li class="menu__item">
+                  <li class="navigation__menu-item">
                     <a href="#">Волонтёрство</a>
                   </li>
-                  <li class="menu__item">
+                  <li class="navigation__menu-item">
                     <a href="#">Учёба</a>
                   </li>
-                  <li class="menu__item">
+                  <li class="navigation__menu-item">
                     <a href="#">Религия</a>
                   </li>
                 </ul>
@@ -79,6 +84,7 @@
         </nav>
         <section class="hero">
           <div class="hero__container container">
+            <h1 class="visually-hidden">Стажировка</h1>
             <div class="hero__swiper swiper" data-hero-swiper>
               <ul class="hero__list swiper-wrapper">
                 <li class="hero__item swiper-slide">
@@ -93,11 +99,11 @@
                         <div class="hero__button-container">
                           <button class="hero__button button">
                             <span class="hero__button-description button__description">подробнее</span>
-                            <div class="hero__button-wrapper button__wrapper">
+                            <span class="hero__button-wrapper button__wrapper">
                               <svg width="10" height="10">
                                 <use xlink:href="__spritemap#sprite-icon-arrow"></use>
                               </svg>
-                            </div>
+                            </span>
                           </button>
                           <svg width="10" height="10">
                             <use xlink:href="__spritemap#sprite-icon-angle"></use>
@@ -144,11 +150,11 @@
                           и другое.</p>
                         <button class="hero__button button">
                           <span class="hero__button-description button__description">подробнее</span>
-                          <div class="hero__button-wrapper button__wrapper">
+                          <span class="hero__button-wrapper button__wrapper">
                             <svg width="10" height="10">
                               <use xlink:href="__spritemap#sprite-icon-arrow"></use>
                             </svg>
-                          </div>
+                          </span>
                         </button>
                       </div>
                       <svg width="26" height="26">
@@ -191,11 +197,11 @@
                         </p>
                         <button class="hero__button button">
                           <span class="hero__button-description button__description">подробнее</span>
-                          <div class="hero__button-wrapper button__wrapper">
+                          <span class="hero__button-wrapper button__wrapper">
                             <svg width="10" height="10">
                               <use xlink:href="__spritemap#sprite-icon-arrow"></use>
                             </svg>
-                          </div>
+                          </span>
                         </button>
                       </div>
                       <svg width="26" height="26">
@@ -253,11 +259,11 @@
                 людей способностью инициировать значимые изменения.</p>
               <button class="about__button button">
                 <span class="about__button-description button__description">подробнее&nbsp;о проекте</span>
-                <div class="button__wrapper">
+                <span class="button__wrapper">
                   <svg width="10" height="10">
                     <use xlink:href="__spritemap#sprite-icon-arrow"></use>
                   </svg>
-                </div>
+                </span>
               </button>
             </div>
           </div>
@@ -311,11 +317,11 @@
           <h2>Программы</h2>
           <button class="programs__button button" type="button">
             <span class="button__description">все программы</span>
-            <div class="button__wrapper">
+            <span class="button__wrapper">
               <svg width="10" height="10">
                 <use xlink:href="__spritemap#sprite-icon-arrow"></use>
               </svg>
-            </div>
+            </span>
           </button>
           <div class="programs__swiper swiper" data-programs-swiper>
             <ul class="programs__list swiper-wrapper">
@@ -330,11 +336,11 @@
                   <div class="programs__group">
                     <p>Получите незаменимый опыт работы в крупнейших мировых компаниях.</p>
                     <button class="button button--small">
-                      <div class="button__wrapper button__wrapper--small">
+                      <span class="button__wrapper button__wrapper--small">
                         <svg width="10" height="10">
                           <use xlink:href="__spritemap#sprite-icon-arrow"></use>
                         </svg>
-                      </div>
+                      </span>
                     </button>
                   </div>
                 </div>
@@ -369,11 +375,11 @@
                   <div class="programs__group">
                     <p>Помогайте другим и развивайте свои лидерские качества.</p>
                     <button class="button button--small">
-                      <div class="button__wrapper button__wrapper--small">
+                      <span class="button__wrapper button__wrapper--small">
                         <svg width="10" height="10">
                           <use xlink:href="__spritemap#sprite-icon-arrow"></use>
                         </svg>
-                      </div>
+                      </span>
                     </button>
                   </div>
                 </div>
@@ -408,11 +414,11 @@
                   <div class="programs__group">
                     <p>Получите образование и измените своё будущее.</p>
                     <button class="button button--small">
-                      <div class="button__wrapper button__wrapper--small">
+                      <span class="button__wrapper button__wrapper--small">
                         <svg width="10" height="10">
                           <use xlink:href="__spritemap#sprite-icon-arrow"></use>
                         </svg>
-                      </div>
+                      </span>
                     </button>
                   </div>
                 </div>
@@ -447,11 +453,11 @@
                   <div class="programs__group">
                     <p>Получите незаменимый опыт работы в крупнейших мировых компаниях.</p>
                     <button class="button button--small">
-                      <div class="button__wrapper  button__wrapper--small">
+                      <span class="button__wrapper  button__wrapper--small">
                         <svg width="10" height="10">
                           <use xlink:href="__spritemap#sprite-icon-arrow"></use>
                         </svg>
-                      </div>
+                      </span>
                     </button>
                   </div>
                 </div>
@@ -486,11 +492,11 @@
                   <div class="programs__group">
                     <p>Помогайте другим и развивайте свои лидерские качества.</p>
                     <button class="button button--small">
-                      <div class="button__wrapper  button__wrapper--small">
+                      <span class="button__wrapper  button__wrapper--small">
                         <svg width="10" height="10">
                           <use xlink:href="__spritemap#sprite-icon-arrow"></use>
                         </svg>
-                      </div>
+                      </span>
                     </button>
                   </div>
                 </div>
@@ -525,11 +531,11 @@
                   <div class="programs__group">
                     <p>Получите образование и измените своё будущее.</p>
                     <button class="button button--small">
-                      <div class="button__wrapper  button__wrapper--small">
+                      <span class="button__wrapper  button__wrapper--small">
                         <svg width="10" height="10">
                           <use xlink:href="__spritemap#sprite-icon-arrow"></use>
                         </svg>
-                      </div>
+                      </span>
                     </button>
                   </div>
                 </div>
@@ -674,11 +680,11 @@
                     <div class="news-cards__group">
                       <p>Саша рассказывает, как попала в программу и как прошла 6-месячная стажировка в ISOFound</p>
                       <button class="button button--small">
-                        <div class="button__wrapper button__wrapper--small">
+                        <span class="button__wrapper button__wrapper--small">
                           <svg width="10" height="10">
                             <use xlink:href="__spritemap#sprite-icon-arrow"></use>
                           </svg>
-                        </div>
+                        </span>
                       </button>
                     </div>
                     <svg width="16" height="16">
@@ -726,11 +732,11 @@
                     <div class="news-cards__group">
                       <p>Какие места посещают<br> наши студенты весной</p>
                       <button class="button button--small">
-                        <div class="button__wrapper button__wrapper--small">
+                        <span class="button__wrapper button__wrapper--small">
                           <svg width="10" height="10">
                             <use xlink:href="__spritemap#sprite-icon-arrow"></use>
                           </svg>
-                        </div>
+                        </span>
                       </button>
                     </div>
                     <svg width="16" height="16">
@@ -778,11 +784,11 @@
                     <div class="news-cards__group">
                       <p>Программа помощи детям длительностью 4 месяца</p>
                       <button class="button button--small">
-                        <div class="button__wrapper button__wrapper--small">
+                        <span class="button__wrapper button__wrapper--small">
                           <svg width="10" height="10">
                             <use xlink:href="__spritemap#sprite-icon-arrow"></use>
                           </svg>
-                        </div>
+                        </span>
                       </button>
                     </div>
                     <svg width="16" height="16">
@@ -830,11 +836,11 @@
                     <div class="news-cards__group">
                       <p>Ведущие компании готовы трудоустроить выпускников стажировки</p>
                       <button class="button button--small">
-                        <div class="button__wrapper button__wrapper--small">
+                        <span class="button__wrapper button__wrapper--small">
                           <svg width="10" height="10">
                             <use xlink:href="__spritemap#sprite-icon-arrow"></use>
                           </svg>
-                        </div>
+                        </span>
                       </button>
                     </div>
                     <svg width="16" height="16">
@@ -882,11 +888,11 @@
                     <div class="news-cards__group">
                       <p>Какие места посещают<br> наши студенты весной</p>
                       <button class="button button--small">
-                        <div class="button__wrapper button__wrapper--small">
+                        <span class="button__wrapper button__wrapper--small">
                           <svg width="10" height="10">
                             <use xlink:href="__spritemap#sprite-icon-arrow"></use>
                           </svg>
-                        </div>
+                        </span>
                       </button>
                     </div>
                     <svg width="16" height="16">
@@ -934,11 +940,11 @@
                     <div class="news-cards__group">
                       <p>Программа помощи детям длительностью 4 месяца</p>
                       <button class="button button--small">
-                        <div class="button__wrapper button__wrapper--small">
+                        <span class="button__wrapper button__wrapper--small">
                           <svg width="10" height="10">
                             <use xlink:href="__spritemap#sprite-icon-arrow"></use>
                           </svg>
-                        </div>
+                        </span>
                       </button>
                     </div>
                     <svg width="16" height="16">
@@ -986,11 +992,11 @@
                     <div class="news-cards__group">
                       <p>Ведущие компании готовы трудоустроить выпускников стажировки</p>
                       <button class="button button--small">
-                        <div class="button__wrapper button__wrapper--small">
+                        <span class="button__wrapper button__wrapper--small">
                           <svg width="10" height="10">
                             <use xlink:href="__spritemap#sprite-icon-arrow"></use>
                           </svg>
-                        </div>
+                        </span>
                       </button>
                     </div>
                     <svg width="16" height="16">
@@ -1038,11 +1044,11 @@
                     <div class="news-cards__group">
                       <p>Какие места посещают<br> наши студенты весной</p>
                       <button class="button button--small">
-                        <div class="button__wrapper button__wrapper--small">
+                        <span class="button__wrapper button__wrapper--small">
                           <svg width="10" height="10">
                             <use xlink:href="__spritemap#sprite-icon-arrow"></use>
                           </svg>
-                        </div>
+                        </span>
                       </button>
                     </div>
                     <svg width="16" height="16">
@@ -1090,11 +1096,11 @@
                     <div class="news-cards__group">
                       <p>Программа помощи детям длительностью 4 месяца</p>
                       <button class="button button--small">
-                        <div class="button__wrapper button__wrapper--small">
+                        <span class="button__wrapper button__wrapper--small">
                           <svg width="10" height="10">
                             <use xlink:href="__spritemap#sprite-icon-arrow"></use>
                           </svg>
-                        </div>
+                        </span>
                       </button>
                     </div>
                     <svg width="16" height="16">
@@ -1557,11 +1563,11 @@
               </ul>
               <button class="form__button button" type="submit">
                 <span class="form__button-description button__description">Отправить</span>
-                <div class="form__button-wrapper button__wrapper">
+                <span class="form__button-wrapper button__wrapper">
                   <svg width="10" height="10">
                     <use xlink:href="__spritemap#sprite-icon-arrow"></use>
                   </svg>
-                </div>
+                </span>
               </button>
             </form>
           </div>
@@ -1588,7 +1594,7 @@
     <footer class="main-footer" data-test="footer">
       <div class="main-footer__container container">
         <div class="main-footer__wrapper">
-          <a class="navigation__logo" href="#" aria-current="page">
+          <a class="main-footer__logo" aria-current="page">
             <img src="img/icon/icon-logo.svg" alt="Логотип" width="52" height="52">
           </a>
           <ul class="main-footer__list">

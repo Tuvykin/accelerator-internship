@@ -3,6 +3,7 @@
 
   @include vp-768 {
     padding: 0;
+    min-width: 320px;
   }
 }
 
@@ -193,10 +194,12 @@
 
   @include vp-1440 {
     gap: 7px;
+    min-width: 352px;
   }
 
   @include vp-768 {
     gap: 12px;
+    min-width: 260px;
   }
 }
 
@@ -293,10 +296,10 @@
   background-color: $color-default-white;
 }
 
-.checkbox-view svg {
+.checkbox-view .checkbox-view {
   color: $color-default-white;
 }
 
-input[type="checkbox"]:checked + .checkbox-view svg {
+input[type="checkbox"]:checked + .checkbox-view {
   color: #316DC2;
 }
