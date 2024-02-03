@@ -1,5 +1,4 @@
 import {iosVhFix} from './utils/ios-vh-fix';
-import './utils/scroll-lock';
 import {initHeroSlider, initProgramsSlider, initReviewsSlider, initNewsSlider} from './modules/init-swiper';
 import './vendor/accordion';
 import { CustomSelect } from './modules/select/custom-select';

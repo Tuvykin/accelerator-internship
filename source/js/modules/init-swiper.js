@@ -45,7 +45,6 @@ export const initProgramsSlider = () => {
 
   return new Swiper(swiperWrapper, {
     modules: [Navigation, Scrollbar],
-    loop: false,
     scrollbar: {
       el: '[data-swiper-programs-scrollbar]',
       draggable: true,
