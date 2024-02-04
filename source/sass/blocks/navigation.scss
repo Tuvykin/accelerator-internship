@@ -23,6 +23,25 @@
   }
 }
 
+.navigation.is-hidden {
+  transition: top 0.3s ease-in-out;
+  top: -84px;
+
+  @include vp-768 {
+    top: -74px;
+  }
+}
+
+.navigation.fixed {
+  position: fixed;
+  transition: top 0.3s ease-in-out;
+  top: 30px;
+
+  @include vp-768 {
+    top: 20px;
+  }
+}
+
 .navigation__logo {
   display: block;
   width: 52px;

@@ -3,6 +3,7 @@ import {initHeroSlider, initProgramsSlider, initReviewsSlider, initNewsSlider} f
 import './vendor/accordion';
 import { CustomSelect } from './modules/select/custom-select';
 import './modules/burger-menu';
+import { StickyHeader } from './modules/sticky-header';
 
 // ---------------------------------
 
@@ -29,5 +30,7 @@ window.addEventListener('DOMContentLoaded', () => {
     // form.init();
     const select = new CustomSelect();
     select.init();
+    const header = new StickyHeader();
+    header.init();
   });
 });
