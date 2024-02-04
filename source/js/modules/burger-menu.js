@@ -41,8 +41,13 @@ function onBurgerButtonClick(evt) {
   document.addEventListener('click', documentClick);
   document.addEventListener('keydown', onDocumentKeydown);
 
-  window.focusLock.lock('[data-navigation-wrapper]', false);
-  window.scrollLock.disableScrolling();
+  if (nav.classList.contains('navigation--is-active')) {
+    window.focusLock.lock('[data-navigation-wrapper]', false);
+    window.scrollLock.disableScrolling();
+  } else {
+    window.focusLock.unlock();
+    window.scrollLock.enableScrolling();
+  }
 }
 
 function documentClick(evt) {
@@ -50,6 +55,7 @@ function documentClick(evt) {
     closeMenu();
   }
 }
+
 
 function closeMenu() {
   burgerButton.classList.remove('navigation__button--is-active');
