@@ -11,21 +11,25 @@
   border: 1px solid #316DC2;
   background-color: $color-transparent;
 
-  &--small {
-    margin: 0;
-    padding: 0;
-    display: block;
-    border: none;
+  &:hover,
+  &:focus {
+    background-color: #316DC2;
+  }
+
+  &:active {
+    background-color: #316DC2;
+  }
+
+  &:disabled,
+  &--disabled {
+    border-color: #A9AFB7;
+    pointer-events: none;
   }
 
   @include vp-768 {
     gap: 16px;
     padding-left: 19px;
     grid-template-columns: 1fr 34px;
-
-    &--small {
-    padding: 0;
-  }
   }
 }
 
@@ -54,18 +58,46 @@
   align-self: center;
   justify-content: center;
 
-  &--small {
-    width: 30px;
-    height: 30px;
-  }
-
   @include vp-768 {
     width: 34px;
     height: 34px;
-
-    &--small {
-      width: 30px;
-      height: 30px;
-    }
   }
+}
+
+.button:hover .button__description,
+.button:focus .button__description {
+  color: $color-default-white;
+}
+
+.button:active .button__description,
+.button:active .button__description {
+  color: $color-default-white;
+  opacity: 0.7;
+}
+
+.button:hover .button__wrapper,
+.button:focus .button__wrapper {
+  background-color: $color-default-white;
+  color: #316DC2;
+}
+
+.button:active .button__wrapper,
+.button:active .button__wrapper {
+  background-color: $color-default-white;
+  color: rgba(49,109,194,0.7);
+}
+
+.button:hover svg,
+.button:focus svg {
+  transform: rotate(45deg);
+}
+
+.button:disabled .button__description,
+.button--disabled .button__description {
+  color: #A9AFB7;
+}
+
+.button:disabled .button__wrapper,
+.button--disabled .button__wrapper {
+  background-color: #A9AFB7;
 }

@@ -19,6 +19,35 @@
   justify-content: center;
   border: none;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $color-default-white;
+    border-radius: 30px;
+  }
+
+  &:active {
+    background-color: $color-default-white;
+  }
+
+  &:disabled,
+  &--disabled {
+    pointer-events: none;
+  }
+}
+
+.slider-nav__button:hover svg,
+.slider-nav__button:focus svg {
+  color: #316DC2;
+}
+
+.slider-nav__button:active svg {
+  color: rgba(49,109,194,0.7);
+}
+
+.slider-nav__button--disabled svg,
+.slider-nav__button:disabled svg {
+  color: #A9AFB7;
 }
 
 .slider-nav__button--prev svg {
