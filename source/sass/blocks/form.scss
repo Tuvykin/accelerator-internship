@@ -253,6 +253,34 @@
 
 .form__button {
   border-color: $color-default-white;
+
+  &:hover {
+    background-color: $color-default-white;
+  }
+}
+
+.form__button:hover .form__button-description,
+.form__button:focus .form__button-description {
+  color: #316DC2;
+}
+
+.form__button:hover .form__button-wrapper,
+.form__button:focus .form__button-wrapper {
+  background-color: #316DC2;
+}
+
+.form__button:hover svg,
+.form__button:focus svg {
+  color: $color-default-white;
+}
+
+
+.form__button:active svg {
+  color: rgba(255,255,255,0.7);
+}
+
+.form__button:disabled svg {
+  color: rgba(255,255,255,0.6);
 }
 
 .form__button-description {
@@ -286,20 +314,21 @@
   appearance: none;
 }
 
-.checkbox-view {
+.form__toggle .checkbox-view {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 20px;
   height: 20px;
   border-radius: 2px;
-  background-color: $color-default-white;
-}
-
-.checkbox-view .checkbox-view {
+  border: 1px solid $color-default-white;
   color: $color-default-white;
 }
 
-input[type="checkbox"]:checked + .checkbox-view {
+input[type="checkbox"] + .checkbox-view {
   color: #316DC2;
+}
+
+input[type="checkbox"]:checked + .checkbox-view {
+  color: $color-default-white;
 }

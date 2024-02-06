@@ -131,40 +131,74 @@
 }
 
 .faq__button {
-  background-color: #316DC2;
-  border-radius: 30px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
   border: none;
   padding: 0;
 }
 
-.faq__button-wrapper {
-  width: 20px;
-  height: 20px;
-  display: block;
-}
-
-.faq__item.is-active .faq__button {
+.faq__button:hover .faq__button-wrapper--plus,
+.faq__button:focus .faq__button-wrapper--plus {
   background-color: $color-default-white;
+  color: #316DC2;
+  border-color: #316DC2;
 }
 
-.faq__item.is-active .faq__button-wrapper--plus {
-  display: none;
+.faq__button:hover .faq__button-wrapper--minus,
+.faq__button:focus .faq__button-wrapper--minus {
+  background-color: #316DC2;
+  color: $color-default-white;
+  border-color: $color-default-white;
 }
 
+.faq__button:hover svg,
+.faq__button:focus svg,
+.faq__button:active svg {
+  transform: none;
+}
+
+.faq__button:active .faq__button-wrapper--plus {
+  background-color: #275699;
+  color: $color-default-white;
+  border-color: #275699;
+}
+
+.faq__button:active .faq__button-wrapper--minus {
+  background-color: $color-default-white;
+  color: #275699;
+}
+
+.faq__button:disabled .faq__button-wrapper,
+.faq__button--disabled .faq__button-wrapper {
+  background-color: #A9AFB7;
+  color: $color-default-white;
+}
+
+.faq__button-wrapper {
+  min-width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid transparent;
+  border-radius: 30px;
+
+  &--plus {
+    background-color: #316DC2;
+  }
+
+  &--minus {
+    background-color: $color-default-white;
+    color: #316DC2;
+  }
+}
+
+.faq__item.is-active .faq__button-wrapper--plus,
 .faq__button-wrapper--minus {
   display: none;
 }
 
 .faq__item.is-active .faq__button-wrapper--minus {
-  display: block;
-}
-
-.faq__button-wrapper--minus svg {
-  background-color: #316DC2;
+  display: flex;
 }
 
 .faq__text-content br {

@@ -84,6 +84,29 @@
     border: 1px solid #316DC2;
     padding: 11px 24px;
     opacity: 1;
+
+    &:hover,
+    &:focus {
+      border-color: transparent;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  &:hover,
+  &:focus {
+   opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:disabled,
+  &--disabled {
+    pointer-events: none;
   }
 
   @include vp-1440 {
@@ -141,6 +164,28 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 20px;
+
+  &:hover,
+  &:focus {
+    border-color: #316DC2;
+    color: #316DC2;
+    opacity: 1;
+  }
+
+  &:active {
+    background-color: #275699;
+    color: $color-default-white;
+    opacity: 1;
+  }
+
+  &:disabled,
+  &--disabled {
+    pointer-events: none;
+    background-color: #A9AFB7;
+    color: rgba(255,255,255,0.6);
+  }
 
   @include vp-768 {
     width: 26px;
@@ -154,9 +199,24 @@
 
 .news__wrapper-slider-button .swiper-pagination-bullet-active {
   border-radius: 20px;
+  border-color:  #316DC2;
   background-color: #316DC2;
   color: $color-default-white;
   opacity: 1;
+
+  &:hover,
+  &:focus {
+    border-color: #316DC2;
+    border-radius: 20px;
+    background-color: transparent;
+    color: #316DC2;
+  }
+
+  &:active {
+    background-color: #275699;
+    color: $color-default-white;
+    opacity: 1;
+  }
 }
 
 .news__swiper {

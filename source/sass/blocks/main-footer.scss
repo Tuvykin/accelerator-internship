@@ -73,6 +73,20 @@
   text-decoration: none;
   color: inherit;
 
+  &:hover,
+  &:focus {
+   color: #316DC2;
+  }
+
+  &:active {
+   color: #275699;
+  }
+
+  &:disabled,
+  &--disabled {
+    pointer-events: none;
+  }
+
   @include vp-1440 {
     line-height: 20px;
   }
@@ -126,6 +140,24 @@
   padding-bottom: 1px;
   border-bottom: 1px solid #484848;
 
+  &:hover,
+  &:focus {
+   color: #316DC2;
+   border-color: #316DC2;
+   text-decoration: underline;
+  }
+
+  &:active {
+   text-decoration: none;
+   color: #275699;
+   border-color: #275699;
+  }
+
+  &:disabled,
+  &--disabled {
+    pointer-events: none;
+  }
+
   @include vp-1440 {
     font-size: 12px;
     line-height: 12px;
@@ -134,4 +166,13 @@
   @include vp-768 {
     line-height: 14px;
   }
+}
+
+.main-footer__logo:hover img,
+.main-footer__logo:focus img {
+  opacity: 0.7;
+}
+
+.main-footer__logo:active img {
+  opacity: 0.3;
 }

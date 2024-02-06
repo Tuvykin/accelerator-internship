@@ -61,6 +61,22 @@
   line-height: 26px;
   color: inherit;
 
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+
+  &:active {
+    opacity: 0.8;
+    text-decoration: none;
+  }
+
+  &:disabled,
+  &--disabled {
+    pointer-events: none;
+    opacity: 0.3;
+  }
+
   @include vp-1440 {
     line-height: 20px;
   }
