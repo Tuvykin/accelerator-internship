@@ -20,18 +20,43 @@
 }
 
 .social__link {
-  display: block;
-  max-height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 36px;
+  min-height: 36px;
+  background-color: #316DC2;
+  border-radius: 50%;
+  color: $color-default-white;
 
   @include vp-768 {
-    max-height: 26px;
+    min-width: 26px;
+    min-height: 26px;
   }
+}
+
+.social__link:hover svg,
+.social__link:focus svg {
+  color: rgba(255,255,255,0.7);
+}
+
+.social__link:active {
+  background-color: #275699;
+}
+
+.social__link:active svg {
+  color: $color-default-white;
+}
+
+.social__link:disabled,
+.social__link--disabled {
+  opacity: 0.3;
 }
 
 .social__link svg {
 
   @include vp-768 {
-    width: 26px;
-    height: 26px;
+    width: 12px;
+    height: 12px;
   }
 }
