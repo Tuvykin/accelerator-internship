@@ -8,7 +8,6 @@ export const initHeroSlider = () => {
     autoHeight: true,
     autoplay: {
       delay: 3000,
-      disableOnInteraction: false,
     },
     grabCursor: true,
     modules: [Pagination, Autoplay],

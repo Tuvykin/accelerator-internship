@@ -1647,6 +1647,83 @@
         </div>
       </div>
     </footer>
+    <div class="modal modal--close">
+      <div class="modal__container modal__auth">
+        <button class="modal__close-button" type="button">
+          <span class="visually-hidden">Закрыть</span>
+          <svg width="22" height="22">
+            <use href="__spritemap#sprite-icon-menu-close"></use>
+          </svg>
+        </button>
+        <section class="modal__text-content">
+          <div class="modal__wrapper">
+            <h2>Напишите нам</h2>
+            <p>Оставьте ваши контакты, если у вас остались вопросы — мы на них ответим!</p>
+          </div>
+          <form action="https://echo.htmlacademy.ru/" method="post" target="_blank">
+            <ul class="modal__list">
+              <li class="modal__item">
+                <div class="modal__input" data-validate-type="text" data-on-input-validate="data-on-input-validate"
+                  data-required="data-required">
+                  <label for="modal-name">Имя</label>
+                  <input type="text" id="modal-name" name="name" required>
+                </div>
+              </li>
+              <li class="modal__item">
+                <div class="modal__input" data-validate-type="phone" data-on-input-validate="data-on-input-validate"
+                  data-required="data-required">
+                  <label for="modal-phone">Телефон</label>
+                  <input type="tel" id="modal-phone" name="phone" required>
+                </div>
+              </li>
+              <li class="modal__item">
+                <div class="custom-select modal__select" data-select="data-select" data-validate-type="select"
+                  data-name="city" data-message-base="Поле обязательно к заполнению">
+                  <span class="modal__select-label">Выберите город</span>
+                  <button class="custom-select__button modal__select-button" type="button"
+                    aria-label="Выберите один вариант из списка">
+                    <span class="custom-select__text"></span>
+                    <span class="custom-select__icon modal__select-icon"></span>
+                  </button>
+                  <ul class="custom-select__list modal__select-list">
+                    <li class="custom-select__item modal__select-item" tabindex="0" data-select-value="Санкт-Петербург">
+                      Санкт-Петербург</li>
+                    <li class="custom-select__item modal__select-item" tabindex="0" data-select-value="Санкт-Петербург">
+                      Санкт-Петербург</li>
+                    <li class="custom-select__item modal__select-item" tabindex="0" data-select-value="Санкт-Петербург">
+                      Санкт-Петербург</li>
+                    <li class="custom-select__item modal__select-item" tabindex="0" data-select-value="Санкт-Петербург">
+                      Санкт-Петербург</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="modal__item">
+                <div class="modal__toggle custom-toggle custom-toggle--checkbox" data-validate-type="checkbox"
+                  data-message-base="Поле обязательно к заполнению" data-required="data-required">
+                  <label>
+                    <input type="checkbox" value="Принято" name="Terms of use" required>
+                    <span class="custom-toggle__checkbox-view">
+                      <svg width="10" height="10">
+                        <use href="__spritemap#sprite-icon-check"></use>
+                      </svg>
+                    </span>
+                    <span class="modal__toggle__checkbox-text">Я согласен на обработку моих персональных данных</span>
+                  </label>
+                </div>
+              </li>
+            </ul>
+            <button class="modal__button button" type="submit">
+              <span class="modal__button-description button__description">Отправить</span>
+              <span class="modal__button-wrapper button__wrapper">
+                <svg width="10" height="10">
+                  <use href="__spritemap#sprite-icon-arrow"></use>
+                </svg>
+              </span>
+            </button>
+          </form>
+        </section>
+      </div>
+    </div>
   </div>
   <script type="module" src="js/main.js"></script>
 </body>
