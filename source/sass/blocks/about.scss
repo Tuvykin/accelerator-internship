@@ -41,7 +41,7 @@
 
 .about__text-content-heading h2 {
   margin: 0;
-  color: #316DC2;
+  color: $color-cerulean-blue;
   font-size: 50px;
   font-weight: 400;
   line-height: 50px;
@@ -94,7 +94,7 @@
 
 .about__text-content-subtitle h3 {
   margin: 0;
-  color: #316DC2;
+  color: $color-cerulean-blue;
   font-size: 32px;
   font-weight: 400;
   line-height: 36px;
@@ -102,7 +102,7 @@
 
   @include vp-1440 {
     font-size: 28px;
-    line-height: 28px
+    line-height: 28px;
   }
 
   @include vp-768 {
@@ -128,12 +128,12 @@
   max-width: 277px;
 
   @include vp-1440 {
-    margin-top: 10px
+    margin-top: 10px;
   }
 
   @include vp-768 {
     max-width: 221px;
-    margin-top: 15px
+    margin-top: 15px;
   }
 }
 
@@ -146,7 +146,7 @@
   list-style-type: none;
   padding: 50px 106px 32px;
   border-radius: 20px;
-  background: #316DC2;
+  background: $color-cerulean-blue;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 32px;
@@ -180,7 +180,7 @@
   display: flex;
   gap: 24px;
   border-radius: 16px;
-  border: 1px solid #F0EFE9;
+  border: 1px solid $color-alabaster;
   min-height: 100%;
   min-width: 478px;
 
@@ -237,7 +237,7 @@
   font-size: 16px;
   font-weight: 300;
   line-height: 20px;
-  color: #F0EFE9;
+  color: $color-alabaster;
   margin: 0;
   width: min-content;
   min-width: 161px;
@@ -271,7 +271,7 @@
   padding: 10px;
   width: 42px;
   height: 42px;
-  background-color: #316DC2;
+  background-color: $color-cerulean-blue;
 }
 
 .about__group br {

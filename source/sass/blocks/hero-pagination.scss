@@ -1,4 +1,4 @@
-.hero__pagination{
+.hero__pagination {
   display: flex;
   align-items: flex-end;
   order: -1;
@@ -20,7 +20,7 @@
   background-color: $color-default-white;
   max-width: 94px;
   width: 100%;
-  border-radius: 20px 20px 0px 0px;
+  border-radius: 20px 20px 0 0;
   display: flex;
   gap: 12px;
   justify-content: center;
@@ -29,12 +29,12 @@
   @include vp-768 {
     max-width: 80px;
     min-height: 28px;
-    border-radius: 12px 12px 0px 0px;
+    border-radius: 12px 12px 0 0;
   }
 }
 
 .hero-pagination__wrapper .swiper-pagination-bullet {
-  border: 1px solid #316DC2;
+  border: 1px solid $color-cerulean-blue;
   border-radius: 50%;
   background-color: $color-transparent;
   width: 10px;
@@ -44,7 +44,7 @@
 
   &::after {
     position: absolute;
-    content: '';
+    content: "";
     display: block;
     width: 22px;
     height: 38px;
@@ -60,7 +60,7 @@
   }
 
   &:active {
-    background-color: #316DC2;
+    background-color: $color-cerulean-blue;
   }
 
   @include vp-768 {
@@ -75,5 +75,5 @@
 }
 
 .hero-pagination__wrapper .swiper-pagination-bullet-active {
-  background-color: #316DC2;
+  background-color: $color-cerulean-blue;
 }

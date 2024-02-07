@@ -1,0 +1,72 @@
+
+.custom-toggle label {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  min-height: 20px;
+  cursor: pointer;
+  position: relative;
+
+  @include vp-768 {
+    line-height: 14px;
+  }
+}
+
+.custom-toggle__checkbox-text {
+  font-size: 12px;
+  line-height: 12px;
+  color: $color-white-90;
+}
+
+.custom-toggle input {
+  position: absolute;
+  appearance: none;
+}
+
+.custom-toggle .custom-toggle__checkbox-view {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 2px;
+  border: 1px solid $color-white-70;
+  color: $color-cerulean-blue;
+}
+
+input[type="checkbox"]:checked + .custom-toggle__checkbox-view {
+  background-color: $color-default-white;
+}
+
+input[type="checkbox"]:hover + .custom-toggle__checkbox-view,
+input[type="checkbox"]:focus + .custom-toggle__checkbox-view {
+  border-color: $color-default-white;
+}
+
+input[type="checkbox"]:checked:hover + .custom-toggle__checkbox-view,
+input[type="checkbox"]:checked:focus + .custom-toggle__checkbox-view {
+  color: $color-default-white;
+  background-color: $color-transparent;
+}
+
+input[type="checkbox"]:hover ~ .custom-toggle__checkbox-text,
+input[type="checkbox"]:focus ~ .custom-toggle__checkbox-text {
+  color: $color-default-white;
+}
+
+input[type="checkbox"]:active + .custom-toggle__checkbox-view {
+  border-color: $color-white-30;
+}
+
+input[type="checkbox"]:active ~ .custom-toggle__checkbox-text {
+  color: $color-white-30;
+}
+
+input[type="checkbox"]:disabled + .custom-toggle__checkbox-view {
+  background-color: $color-white-60;
+  color: $color-transparent;
+}
+
+input[type="checkbox"]:disabled ~ .custom-toggle__checkbox-text {
+  color: $color-white-60;
+}

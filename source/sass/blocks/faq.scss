@@ -3,7 +3,7 @@
   flex-direction: column;
   gap: 60px;
   align-items: center;
-  color: #316DC2;
+  color: $color-cerulean-blue;
 
   @include vp-1440 {
     gap: 40px;
@@ -49,7 +49,7 @@
 .faq__item {
   padding: 39px;
   border-radius: 16px;
-  border: 1px solid #316DC2;
+  border: 1px solid $color-cerulean-blue;
   min-width: 1028px;
 
   &--size {
@@ -99,7 +99,7 @@
 .faq__text-content p {
   margin: 0;
   max-width: 690px;
-  color: #F0EFE9;
+  color: $color-alabaster;
 
   @include vp-1440 {
     line-height: 20px;
@@ -115,7 +115,7 @@
   display: flex;
   flex-direction: column;
   gap: 13px;
-  background-color: #316DC2;
+  background-color: $color-cerulean-blue;
   color: $color-default-white;
   padding-bottom: 32px;
 
@@ -139,13 +139,13 @@
 .faq__button:hover .faq__button-wrapper--plus,
 .faq__button:focus .faq__button-wrapper--plus {
   background-color: $color-default-white;
-  color: #316DC2;
-  border-color: #316DC2;
+  color: $color-cerulean-blue;
+  border-color: $color-cerulean-blue;
 }
 
 .faq__button:hover .faq__button-wrapper--minus,
 .faq__button:focus .faq__button-wrapper--minus {
-  background-color: #316DC2;
+  background-color: $color-cerulean-blue;
   color: $color-default-white;
   border-color: $color-default-white;
 }
@@ -157,19 +157,19 @@
 }
 
 .faq__button:active .faq__button-wrapper--plus {
-  background-color: #275699;
+  background-color: $color-endeavour;
   color: $color-default-white;
-  border-color: #275699;
+  border-color: $color-endeavour;
 }
 
 .faq__button:active .faq__button-wrapper--minus {
   background-color: $color-default-white;
-  color: #275699;
+  color: $color-endeavour;
 }
 
 .faq__button:disabled .faq__button-wrapper,
 .faq__button--disabled .faq__button-wrapper {
-  background-color: #A9AFB7;
+  background-color: $color-mischka;
   color: $color-default-white;
 }
 
@@ -179,16 +179,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid transparent;
+  border: 1px solid $color-transparent;
   border-radius: 30px;
 
   &--plus {
-    background-color: #316DC2;
+    background-color: $color-cerulean-blue;
   }
 
   &--minus {
     background-color: $color-default-white;
-    color: #316DC2;
+    color: $color-cerulean-blue;
   }
 }
 
@@ -202,7 +202,6 @@
 }
 
 .faq__text-content br {
-
   @include vp-768 {
     display: none;
   }

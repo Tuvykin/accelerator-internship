@@ -75,11 +75,11 @@
 
   &:hover,
   &:focus {
-   color: #316DC2;
+    color: $color-cerulean-blue;
   }
 
   &:active {
-   color: #275699;
+    color: $color-endeavour;
   }
 
   &:disabled,
@@ -138,19 +138,19 @@
   font-size: 14px;
   line-height: 18px;
   padding-bottom: 1px;
-  border-bottom: 1px solid #484848;
+  border-bottom: 1px solid $color-charcoal;
 
   &:hover,
   &:focus {
-   color: #316DC2;
-   border-color: #316DC2;
-   text-decoration: underline;
+    color: $color-cerulean-blue;
+    border-color: $color-cerulean-blue;
+    text-decoration: underline;
   }
 
   &:active {
-   text-decoration: none;
-   color: #275699;
-   border-color: #275699;
+    text-decoration: none;
+    color: $color-endeavour;
+    border-color: $color-endeavour;
   }
 
   &:disabled,

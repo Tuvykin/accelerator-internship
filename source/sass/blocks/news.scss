@@ -18,7 +18,7 @@
 
 .news__container h2 {
   margin: 0;
-  color: #316DC2;
+  color: $color-cerulean-blue;
   font-size: 50px;
   font-weight: 400;
   line-height: 50px;
@@ -63,14 +63,13 @@
 }
 
 .news__item {
-
   @include vp-768 {
     height: min-content;
   }
 }
 
 .news__button {
-  color: #316DC2;
+  color: $color-cerulean-blue;
   font-size: 14px;
   font-weight: 500;
   line-height: 14px;
@@ -81,13 +80,13 @@
 
   &--current {
     border-radius: 20px;
-    border: 1px solid #316DC2;
+    border: 1px solid $color-cerulean-blue;
     padding: 11px 24px;
     opacity: 1;
 
     &:hover,
     &:focus {
-      border-color: transparent;
+      border-color: $color-transparent;
     }
 
     &:active {
@@ -97,7 +96,7 @@
 
   &:hover,
   &:focus {
-   opacity: 1;
+    opacity: 1;
   }
 
   &:active {
@@ -158,24 +157,24 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
-  color: #316DC2;
+  color: $color-cerulean-blue;
   opacity: 0.5;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  border: 1px solid transparent;
+  border: 1px solid $color-transparent;
   border-radius: 20px;
 
   &:hover,
   &:focus {
-    border-color: #316DC2;
-    color: #316DC2;
+    border-color: $color-cerulean-blue;
+    color: $color-cerulean-blue;
     opacity: 1;
   }
 
   &:active {
-    background-color: #275699;
+    background-color: $color-endeavour;
     color: $color-default-white;
     opacity: 1;
   }
@@ -183,8 +182,8 @@
   &:disabled,
   &--disabled {
     pointer-events: none;
-    background-color: #A9AFB7;
-    color: rgba(255,255,255,0.6);
+    background-color: $color-mischka;
+    color: $color-white-60;
   }
 
   @include vp-768 {
@@ -199,28 +198,27 @@
 
 .news__wrapper-slider-button .swiper-pagination-bullet-active {
   border-radius: 20px;
-  border-color:  #316DC2;
-  background-color: #316DC2;
+  border-color: $color-cerulean-blue;
+  background-color: $color-cerulean-blue;
   color: $color-default-white;
   opacity: 1;
 
   &:hover,
   &:focus {
-    border-color: #316DC2;
+    border-color: $color-cerulean-blue;
     border-radius: 20px;
-    background-color: transparent;
-    color: #316DC2;
+    background-color: $color-transparent;
+    color: $color-cerulean-blue;
   }
 
   &:active {
-    background-color: #275699;
+    background-color: $color-endeavour;
     color: $color-default-white;
     opacity: 1;
   }
 }
 
 .news__swiper {
-
   @include vp-1440 {
     width: 678px;
     height: 730px;

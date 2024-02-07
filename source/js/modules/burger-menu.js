@@ -1,10 +1,10 @@
 import '../utils/focus-lock';
 import '../utils/scroll-lock';
 
-const burgerButton = document.querySelector('[data-burger-button]');
-const nav = document.querySelector('[data-navigation]');
-const navList = document.querySelector('[data-navigation-list]');
-const wrapper = document.querySelector('[data-wrapper]');
+const burgerButton = document.querySelector('[data-menu="burger-button"]');
+const nav = document.querySelector('[data-menu="navigation"]');
+const navList = document.querySelector('[data-menu="navigation-list"]');
+const wrapper = document.querySelector('[data-menu="wrapper"]');
 
 const isEscapeKey = (evt) => evt.key === 'Escape';
 const isActive = navList.classList.contains('navigation__list--is-active');
@@ -18,7 +18,7 @@ const onDocumentKeydown = (evt) => {
   }
 };
 
-const menuLinks = document.querySelectorAll('[data-menu-link]');
+const menuLinks = document.querySelectorAll('[data-menu="menu-link"]');
 
 if (menuLinks.length > 0) {
   menuLinks.forEach((menuLink) => {
@@ -42,7 +42,7 @@ function onBurgerButtonClick(evt) {
   document.addEventListener('keydown', onDocumentKeydown);
 
   if (nav.classList.contains('navigation--is-active')) {
-    window.focusLock.lock('[data-navigation-wrapper]', false);
+    window.focusLock.lock('[data-menu="navigation-wrapper"]', false);
     window.scrollLock.disableScrolling();
   } else {
     window.focusLock.unlock();

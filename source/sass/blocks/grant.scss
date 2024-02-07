@@ -1,6 +1,6 @@
 .grant__container {
   padding: 120px 100px;
-  background-color: #316DC2;
+  background-color: $color-cerulean-blue;
   color: $color-default-white;
   display: flex;
   gap: 138px;
@@ -66,7 +66,6 @@
 }
 
 .grant__wrapper p {
-
   @include vp-768 {
     font-size: 14px;
     min-height: 10px;
@@ -102,7 +101,7 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
-  counter-reset:  item;
+  counter-reset: item;
 
   @include vp-1440 {
     display: grid;
@@ -140,7 +139,7 @@
     text-transform: uppercase;
     text-align: center;
     z-index: 1;
-    background-color: #316DC2
+    background-color: $color-cerulean-blue;
   }
 
   @include vp-768 {
@@ -160,7 +159,7 @@
 .grant__group {
   padding: 22px 25px;
   border-radius: 16px;
-  border: 1px solid #F0EFE9;
+  border: 1px solid $color-alabaster;
 
   @include vp-1440 {
     padding: 25px 24px;
@@ -197,7 +196,6 @@
 }
 
 .grant__text-content br {
-
   @include vp-768 {
     display: none;
   }

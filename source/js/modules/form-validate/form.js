@@ -70,7 +70,7 @@ export class Form {
     }
     if (!this.validateForm(event.target) && callback) {
       this._callbacks[callback].errorCallback(event);
-      return;
+
     }
   }
 

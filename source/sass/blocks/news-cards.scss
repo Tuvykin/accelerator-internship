@@ -61,27 +61,28 @@
 }
 
 .news-cards__text-content {
-  color: #F0EFE9;
+  color: $color-alabaster;
   display: flex;
   flex-direction: column;
+  margin-left: -1px;
+  margin-bottom: -1px;
 }
 
 .news-cards__text-content h3 {
   margin: 0;
-  color: #316DC2;
+  color: $color-cerulean-blue;
   font-size: 24px;
   font-weight: 400;
   line-height: 26px;
   max-width: 291px;
   width: 100%;
-  background-color: #F0EFE9;
-  border-radius: 0 12px 0px 0px;
+  background-color: $color-alabaster;
+  border-radius: 0 12px 0 0;
   padding: 13px 18px 2px 0;
 
   @include vp-1440 {
     font-size: 20px;
     line-height: 24px;
-    padding: 0;
     max-width: 207px;
     padding: 5px 18px 1px 0;
   }
@@ -112,7 +113,7 @@
   display: flex;
   align-items: flex-end;
   margin-top: -1px;
-  color: #F0EFE9;
+  color: $color-alabaster;
 }
 
 .news-cards__text-content p {
@@ -120,7 +121,7 @@
   max-width: 325px;
   font-size: 14px;
   line-height: 18px;
-  color: #484848;
+  color: $color-charcoal;
 
   @include vp-1440 {
     line-height: 20px;
@@ -148,33 +149,28 @@
   line-height: 12px;
   letter-spacing: 0.12px;
   text-transform: uppercase;
-  color: #316DC2;
+  color: $color-cerulean-blue;
   padding: 10px 12px 5px 0;
-  background-color: #F0EFE9;
-  border-radius: 0px 12px 0px 0px;
+  background-color: $color-alabaster;
+  border-radius: 0 12px 0 0;
 }
 
 .news-cards__group {
-  border-radius: 0px 12px;
+  border-radius: 0 12px;
   padding: 9px 18px 11px 0;
   min-height: 57px;
   display: flex;
   gap: 16px;
   align-items: center;
-  background-color: #F0EFE9;
+  background-color: $color-alabaster;
   margin-top: -1px;
 
   @include vp-768 {
     padding: 12px 10px 10px 0;
     min-height: 52px;
     gap: 10px;
-    border-radius: 0px 12px 0 0;
+    border-radius: 0 12px 0 0;
   }
-}
-
-.news-cards__text-content {
-  margin-left: -1px;
-  margin-bottom: -1px;
 }
 
 .news-cards__wrapper-image img {
@@ -208,7 +204,6 @@
 }
 
 .news-cards__text-content br {
-
   @include vp-768 {
     display: none;
   }
@@ -221,7 +216,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 44px;
-  background-color: #316DC2;
+  background-color: $color-cerulean-blue;
   color: $color-default-white;
 
   &:hover,
@@ -235,19 +230,19 @@
 
   &:disabled,
   &--disabled {
-    background-color: #A9AFB7;
+    background-color: $color-mischka;
     pointer-events: none;
   }
 }
 
 .news-cards__link:hover svg,
 .news-cards__link:focus svg {
-  color: #316DC2;
+  color: $color-cerulean-blue;
   transform: rotate(45deg);
 }
 
 .news-cards__linkk:active svg {
-  color: rgba(49,109,194,0.7);
+  color: $color-cerulean-blue-70;
   transform: rotate(45deg);
 }
 

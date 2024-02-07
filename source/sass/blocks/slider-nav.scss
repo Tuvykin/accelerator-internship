@@ -10,7 +10,7 @@
 }
 
 .slider-nav__button {
-  color: #316DC2;
+  color: $color-cerulean-blue;
   width: 22px;
   height: 22px;
   padding: 6px;
@@ -38,16 +38,16 @@
 
 .slider-nav__button:hover svg,
 .slider-nav__button:focus svg {
-  color: #316DC2;
+  color: $color-cerulean-blue;
 }
 
 .slider-nav__button:active svg {
-  color: rgba(49,109,194,0.7);
+  color: $color-cerulean-blue-70;
 }
 
 .slider-nav__button--disabled svg,
 .slider-nav__button:disabled svg {
-  color: #A9AFB7;
+  color: $color-mischka;
 }
 
 .slider-nav__button--prev svg {

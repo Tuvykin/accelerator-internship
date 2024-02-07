@@ -2,18 +2,18 @@ import Swiper from 'swiper';
 import {Pagination, Navigation, Autoplay, Scrollbar, Grid} from 'swiper/modules';
 
 export const initHeroSlider = () => {
-  const swiperWrapper = new Swiper('[data-hero-swiper]', {
+  const swiperWrapper = new Swiper('[data-swiper="hero"]', {
     observer: true,
     loop: true,
     autoHeight: true,
-    // autoplay: {
-    //   delay: 3000,
-    //   disableOnInteraction: false,
-    // },
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
     grabCursor: true,
     modules: [Pagination, Autoplay],
     pagination: {
-      el: '.swiper-slide-active [data-swiper-hero-pagination]',
+      el: '.swiper-slide-active [data-swiper="hero-pagination"]',
       clickable: true,
       type: 'bullets',
     },
@@ -39,14 +39,14 @@ export const initHeroSlider = () => {
 };
 
 export const initProgramsSlider = () => {
-  const swiperWrapper = document.querySelector('[data-programs-swiper]');
-  const buttonNext = document.querySelector('[data-programs-swiper-btn-next]');
-  const buttonPrev = document.querySelector('[data-programs-swiper-btn-prev]');
+  const swiperWrapper = document.querySelector('[data-swiper="programs"]');
+  const buttonNext = document.querySelector('[data-swiper="programs-button-next"]');
+  const buttonPrev = document.querySelector('[data-swiper="programs-button-prev"');
 
   return new Swiper(swiperWrapper, {
     modules: [Navigation, Scrollbar],
     scrollbar: {
-      el: '[data-swiper-programs-scrollbar]',
+      el: '[data-swiper="programs-scrollbar"]',
       draggable: true,
     },
     breakpoints: {
@@ -80,9 +80,9 @@ export const initProgramsSlider = () => {
 };
 
 export const initNewsSlider = () => {
-  const swiperWrapper = document.querySelector('[data-news-swiper]');
-  const buttonNext = document.querySelector('[data-news-swiper-btn-next]');
-  const buttonPrev = document.querySelector('[data-news-swiper-btn-prev]');
+  const swiperWrapper = document.querySelector('[data-swiper="news"]');
+  const buttonNext = document.querySelector('[data-swiper="news-button-next"]');
+  const buttonPrev = document.querySelector('[data-swiper="news-button-prev"]');
 
   return new Swiper(swiperWrapper, {
     modules: [Navigation, Pagination, Grid],
@@ -112,7 +112,7 @@ export const initNewsSlider = () => {
       prevEl: buttonPrev,
     },
     pagination: {
-      el: '[data-swiper-news-pagination]',
+      el: '[data-swiper="news-pagination"]',
       clickable: true,
       renderBullet: function (i, className) {
         return `<span class="${ className }">${ i + 1 }</span>`;
@@ -122,15 +122,15 @@ export const initNewsSlider = () => {
 };
 
 export const initReviewsSlider = () => {
-  const swiperWrapper = document.querySelector('[data-reviews-swiper]');
-  const buttonNext = document.querySelector('[data-reviews-swiper-btn-next]');
-  const buttonPrev = document.querySelector('[data-reviews-swiper-btn-prev]');
+  const swiperWrapper = document.querySelector('[data-swiper="reviews"]');
+  const buttonNext = document.querySelector('[data-swiper="reviews-button-next"]');
+  const buttonPrev = document.querySelector('[data-swiper="reviews-button-prev"]');
 
   return new Swiper(swiperWrapper, {
     modules: [Navigation, Scrollbar],
     loop: false,
     scrollbar: {
-      el: '[data-swiper-reviews-scrollbar]',
+      el: '[data-swiper="reviews-scrollbar"]',
       draggable: true,
     },
     breakpoints: {

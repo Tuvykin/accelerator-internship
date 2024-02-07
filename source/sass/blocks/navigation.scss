@@ -62,14 +62,14 @@
   position: relative;
 
   &::after {
-    content: '';
+    content: "";
     width: 100%;
     height: 100%;
-    background: rgba(13, 29, 51, 0.40);
+    background: $color-black-pearl;
     position: absolute;
     top: 0;
     z-index: 1;
-    border-radius: 50%
+    border-radius: 50%;
   }
 
   @include vp-768 {
@@ -98,7 +98,7 @@
     list-style-type: none;
     flex-direction: column;
     gap: 24px;
-    background-color: #316DC2;
+    background-color: $color-cerulean-blue;
     border-radius: 16px;
     min-width: 286px;
   }
@@ -162,7 +162,7 @@
 }
 
 .navigation__item svg {
-  transform: rotate(180deg)
+  transform: rotate(180deg);
 }
 
 .navigation__item.is-active svg {
@@ -179,7 +179,7 @@
   background-color: $color-default-white;
 
   &--is-active {
-    background-color: #316DC2;
+    background-color: $color-cerulean-blue;
 
     &:hover,
     &:focus {
@@ -205,7 +205,6 @@
 }
 
 .navigation__button-description {
-
   @include vp-768 {
     font-size: 14px;
     line-height: 14px;
@@ -214,7 +213,6 @@
 }
 
 .navigation__button-wrapper {
-
   @include vp-768 {
     width: 46px;
     height: 46px;
@@ -231,7 +229,7 @@
 }
 
 .navigation__button--is-active svg {
-  color: #316DC2;
+  color: $color-cerulean-blue;
   transition: 0.5s;
 }
 
@@ -245,23 +243,23 @@
 
 .navigation__button--is-active:hover .navigation__button-description,
 .navigation__button--is-active:focus .navigation__button-description {
-  color: #316DC2;
+  color: $color-cerulean-blue;
 }
 
 .navigation__button--is-active:hover .navigation__button-wrapper,
 .navigation__button--is-active:focus .navigation__button-wrapper {
-  background-color: #316DC2;
+  background-color: $color-cerulean-blue;
 }
 
 .navigation__button--is-active:hover svg,
 .navigation__button--is-active:focus svg,
 .navigation__button--is-active:active svg {
-  color: rgba(255,255,255,0.7);
+  color: $color-white-70;
   transform: rotate(-180deg);
 }
 
 .navigation__button--is-active:disabled svg {
-  color: rgba(255,255,255,0.6);
+  color: $color-white-60;
 }
 
 .navigation__menu-list {
